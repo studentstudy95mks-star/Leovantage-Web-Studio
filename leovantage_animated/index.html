@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leovantage Web Studio — AI-Powered Web Development & Digital Solutions Agency</title>
+<meta name="description" content="Leovantage Web Studio is a premium digital agency specializing in AI-powered website development, custom web applications, mobile apps, and UI/UX design. Transform your business with cutting-edge technology.">
+<meta name="keywords" content="AI website development, web design agency, custom web application, mobile app development, UI UX design, SEO optimization, digital agency India">
+<meta name="author" content="Leovantage Web Studio">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://leovantagewebstudio.com/">
+<meta property="og:title" content="Leovantage Web Studio — AI-Powered Web Development & Digital Solutions">
+<meta property="og:description" content="Premium digital agency specializing in AI-powered websites, web applications, mobile apps, and UI/UX design.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leovantagewebstudio.com/">
+<meta property="og:image" content="https://leovantagewebstudio.com/assets/images/logo/leovantage-web-studio-icon.png">
+<meta property="og:site_name" content="Leovantage Web Studio">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Leovantage Web Studio — AI-Powered Web Development Agency">
+<meta name="twitter:description" content="Premium digital agency specializing in AI-powered websites, web apps, mobile apps, and UI/UX design.">
+<meta name="twitter:image" content="https://leovantagewebstudio.com/assets/images/logo/leovantage-web-studio-icon.png">
+<link rel="icon" type="image/png" href="assets/images/logo/leovantage-web-studio-icon.png">
+<link rel="shortcut icon" type="image/png" href="assets/images/logo/leovantage-web-studio-icon.png">
+<link rel="apple-touch-icon" href="assets/images/logo/leovantage-web-studio-icon.png">
+<meta name="msapplication-TileImage" content="assets/images/logo/leovantage-web-studio-icon.png">
+<meta name="theme-color" content="#060E1A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{--pri:#3B82F6;--sec:#8B5CF6;--acc:#06D6A0;--acc2:#22D3EE;--grad:linear-gradient(135deg,#3B82F6,#8B5CF6);--grad-w:linear-gradient(135deg,#3B82F6,#06D6A0);--bg-d:#040B14;--bg:#060E1A;--bg2:#0A1628;--bg3:#0E1F35;--surf:rgba(14,31,53,.65);--surf-h:rgba(14,31,53,.9);--card:rgba(12,25,45,.7);--cb:rgba(255,255,255,.06);--cbh:rgba(59,130,246,.35);--txt:#94A3B8;--txt-hi:#F1F5F9;--hd:#F8FAFC;--nav-bg:rgba(6,14,26,.85);--ft-bg:rgba(4,8,16,.98);--muted:rgba(148,163,184,.45)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:var(--txt);overflow-x:hidden;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5{font-family:'Sora',sans-serif;font-weight:700;color:var(--hd);line-height:1.15}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg-d)}::-webkit-scrollbar-thumb{background:var(--pri);border-radius:10px}
+.container{max-width:1200px;margin:0 auto;width:100%}
+.section-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--acc);margin-bottom:16px}
+.section-tag::before{content:'';width:28px;height:1.5px;background:linear-gradient(90deg,var(--acc),transparent)}
+.section-title{font-size:clamp(28px,3.5vw,46px);letter-spacing:-1.2px;margin-bottom:16px;color:var(--hd)}
+.section-sub{color:var(--txt);max-width:560px;font-size:16px;line-height:1.75}
+.section-header{text-align:center;margin-bottom:64px}.section-header .section-sub{margin:0 auto}
+.text-center{text-align:center}
+.rv{opacity:0;transform:translateY(40px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.rv.v{opacity:1;transform:translateY(0)}.rv-1{transition-delay:.08s}.rv-2{transition-delay:.16s}.rv-3{transition-delay:.24s}.rv-4{transition-delay:.32s}
+section,section *{visibility:visible!important}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(24px) saturate(180%);background:var(--nav-bg);border-bottom:1px solid rgba(255,255,255,.04);transition:all .4s cubic-bezier(.16,1,.3,1)}
+nav.scrolled{padding:12px 5%;background:rgba(6,14,26,.96);box-shadow:0 4px 40px rgba(0,0,0,.5)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{width:36px;height:36px;border-radius:10px;object-fit:cover;box-shadow:0 0 20px rgba(59,130,246,.4)}
+.logo-text{font-family:'Sora',sans-serif;font-weight:700;font-size:18px;color:var(--hd);letter-spacing:-.3px}.logo-text span{color:var(--acc)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.6);text-decoration:none;font-size:13.5px;font-weight:500;transition:color .25s;letter-spacing:.2px}.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--grad);color:#fff;border:none;padding:10px 22px;border-radius:8px;font-weight:600;font-size:13px;cursor:pointer;transition:all .3s;font-family:'Sora',sans-serif;box-shadow:0 4px 20px rgba(59,130,246,.35);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(59,130,246,.5)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1100;position:relative}
+.hamburger span{width:24px;height:2px;background:#fff;border-radius:2px;transition:all .3s ease}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* MOBILE MENU */
+.mobile-menu{display:none;position:fixed;inset:0;z-index:1050;background:rgba(4,8,16,.92);backdrop-filter:blur(20px);opacity:0;pointer-events:none;transition:opacity .35s ease}
+.mobile-menu.open{opacity:1;pointer-events:all}
+.mobile-menu-drawer{position:absolute;top:0;right:0;width:300px;max-width:85vw;height:100%;background:rgba(10,22,40,.98);border-left:1px solid rgba(255,255,255,.06);padding:90px 28px 40px;overflow-y:auto;transform:translateX(100%);transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.mobile-menu.open .mobile-menu-drawer{transform:translateX(0)}
+.mobile-menu-link{color:rgba(255,255,255,.7);text-decoration:none;font-family:'Sora',sans-serif;font-size:15px;font-weight:500;padding:14px 16px;border-radius:10px;transition:all .2s;border:1px solid transparent;display:block}
+.mobile-menu-link:hover,.mobile-menu-link:active{color:#fff;background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.25)}
+.mobile-menu-divider{height:1px;background:rgba(255,255,255,.06);margin:12px 0}
+.mobile-menu-cta{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--grad);color:#fff;text-decoration:none;padding:14px 20px;border-radius:10px;font-family:'Sora',sans-serif;font-weight:600;font-size:14px;margin-top:12px;box-shadow:0 6px 24px rgba(59,130,246,.35);transition:all .3s}
+.mobile-menu-cta:hover{transform:translateY(-2px)}
+@media(max-width:768px){.mobile-menu{display:block}}
+
+/* WHATSAPP */
+.whatsapp-float{display:none;position:fixed;bottom:24px;right:24px;z-index:9999;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border:none;cursor:pointer;box-shadow:0 6px 30px rgba(37,211,102,.45);align-items:center;justify-content:center;animation:waPulse 3s ease-in-out infinite;text-decoration:none}
+@keyframes waPulse{0%,100%{box-shadow:0 6px 30px rgba(37,211,102,.45)}50%{box-shadow:0 6px 40px rgba(37,211,102,.7),0 0 0 8px rgba(37,211,102,.1)}}
+@media(max-width:768px){.whatsapp-float{display:flex}}
+
+/* BUTTONS */
+.btn-primary{background:var(--grad);color:#fff;border:none;padding:14px 32px;border-radius:10px;font-weight:600;font-size:14.5px;cursor:pointer;transition:all .35s cubic-bezier(.16,1,.3,1);font-family:'Sora',sans-serif;box-shadow:0 8px 32px rgba(59,130,246,.3);text-decoration:none;display:inline-flex;align-items:center;gap:8px;position:relative;overflow:hidden}
+.btn-primary::after{content:'';position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.15),transparent);transition:left .6s ease}
+.btn-primary:hover::after{left:125%}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 44px rgba(59,130,246,.45)}
+.btn-secondary{background:0;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.15);padding:14px 32px;border-radius:10px;font-weight:600;font-size:14.5px;cursor:pointer;transition:all .3s;font-family:'Sora',sans-serif;text-decoration:none;display:inline-flex;align-items:center;gap:8px;backdrop-filter:blur(10px)}
+.btn-secondary:hover{border-color:rgba(59,130,246,.5);background:rgba(59,130,246,.08);transform:translateY(-3px);color:#fff}
+@keyframes ctaFloat{0%,100%{transform:translateY(0);box-shadow:0 8px 32px rgba(59,130,246,.3)}50%{transform:translateY(-6px);box-shadow:0 16px 48px rgba(59,130,246,.45)}}
+.cta-float{animation:ctaFloat 3.6s cubic-bezier(.45,0,.55,1) infinite}.cta-float:hover{animation:none;transform:translateY(-4px) scale(1.02);box-shadow:0 20px 52px rgba(59,130,246,.5)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;padding:140px 5% 100px;position:relative;overflow:hidden;background:var(--bg-d)}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 65% 35%,rgba(59,130,246,.10) 0%,transparent 60%),radial-gradient(ellipse 50% 45% at 80% 75%,rgba(139,92,246,.07) 0%,transparent 55%),radial-gradient(ellipse 35% 35% at 15% 25%,rgba(6,214,160,.04) 0%,transparent 55%),var(--bg-d)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.03) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,#000 30%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,#000 30%,transparent 70%)}
+.hero-container{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(6,214,160,.08);border:1px solid rgba(6,214,160,.2);padding:7px 18px;border-radius:50px;font-size:11px;font-weight:700;color:var(--acc);margin-bottom:28px;letter-spacing:1.5px;text-transform:uppercase}
+.hero-badge .bd{width:6px;height:6px;background:var(--acc);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+.hero h1{font-size:clamp(34px,4.5vw,56px);letter-spacing:-1.8px;margin-bottom:24px;color:#fff}
+.hero h1 .gt{background:linear-gradient(135deg,#3B82F6,#06D6A0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:17px;max-width:520px;margin-bottom:40px;line-height:1.8;color:rgba(148,163,184,.9)}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:40px;margin-top:52px;padding-top:40px;border-top:1px solid rgba(255,255,255,.06)}
+.hero-stat .stat-num{font-family:'Sora',sans-serif;font-size:26px;font-weight:800;background:var(--grad-w);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-stat .stat-label{font-size:13px;color:rgba(148,163,184,.6);margin-top:2px}
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center;height:480px}
+.mockup-browser{width:400px;background:rgba(14,31,53,.85);border-radius:16px;border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(20px);overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 80px rgba(59,130,246,.12);animation:fY 6s ease-in-out infinite;transform:perspective(1000px) rotateY(-5deg) rotateX(2deg)}
+@keyframes fY{0%,100%{transform:perspective(1000px) rotateY(-5deg) rotateX(2deg) translateY(0)}50%{transform:perspective(1000px) rotateY(-5deg) rotateX(2deg) translateY(-14px)}}
+.browser-bar{background:rgba(4,11,20,.9);padding:12px 16px;display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(255,255,255,.05)}
+.browser-dots{display:flex;gap:6px}.browser-dots span{width:10px;height:10px;border-radius:50%}
+.dot-r{background:#EF4444}.dot-y{background:#F59E0B}.dot-g{background:#10B981}
+.browser-url{flex:1;background:rgba(255,255,255,.04);border-radius:6px;padding:5px 12px;font-size:11px;color:rgba(255,255,255,.3)}
+.browser-content{padding:20px}
+.browser-hero-mock{height:75px;background:linear-gradient(135deg,rgba(59,130,246,.15),rgba(139,92,246,.12));border-radius:8px;margin-bottom:12px;position:relative;overflow:hidden}
+.browser-hero-mock::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.04) 50%,transparent 100%);animation:shimmer 2.5s infinite}
+@keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.mock-row{display:flex;gap:8px;margin-bottom:8px}.mock-card{flex:1;height:46px;background:rgba(255,255,255,.03);border-radius:8px;border:1px solid rgba(255,255,255,.05)}
+.mock-line{height:7px;background:rgba(255,255,255,.05);border-radius:4px;margin-bottom:7px}.mock-line.short{width:60%}.mock-line.med{width:80%}
+.mock-btn-mock{height:26px;width:90px;background:var(--grad);border-radius:6px;opacity:.6}
+.mockup-phone{position:absolute;right:-15px;bottom:45px;width:115px;background:rgba(14,31,53,.92);border-radius:18px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 30px rgba(139,92,246,.15);overflow:hidden;animation:fY2 6s ease-in-out infinite 1s}
+@keyframes fY2{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.phone-notch{height:12px;background:rgba(4,11,20,.9);display:flex;justify-content:center;align-items:center;padding:8px}
+.phone-notch-inner{width:38px;height:5px;background:rgba(255,255,255,.08);border-radius:3px}
+.phone-content{padding:8px}.phone-card{height:50px;background:linear-gradient(135deg,rgba(59,130,246,.2),rgba(139,92,246,.15));border-radius:8px;margin-bottom:6px;border:1px solid rgba(255,255,255,.06)}
+.phone-mini{height:7px;background:rgba(255,255,255,.05);border-radius:4px;margin-bottom:5px}.phone-mini.sh{width:70%}
+.glow-orb-1{position:absolute;width:280px;height:280px;border-radius:50%;background:radial-gradient(rgba(59,130,246,.3),transparent 70%);top:-40px;left:-40px;filter:blur(50px);pointer-events:none}
+.glow-orb-2{position:absolute;width:180px;height:180px;border-radius:50%;background:radial-gradient(rgba(139,92,246,.25),transparent 70%);bottom:50px;right:-25px;filter:blur(40px);pointer-events:none}
+
+/* TRUST */
+.trust{background:rgba(6,14,26,.6);border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04);padding:48px 5%}
+.trust-inner{max-width:1000px;margin:0 auto;text-align:center}
+.trust-label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:32px}
+.trust-stats{display:flex;justify-content:center;gap:64px;flex-wrap:wrap}
+.trust-stat{text-align:center}
+.trust-stat-num{font-family:'Sora',sans-serif;font-size:32px;font-weight:800;color:var(--hd)}
+.trust-stat-label{font-size:13px;color:var(--txt);margin-top:4px}
+.trust-stat-bar{width:40px;height:3px;border-radius:2px;margin:10px auto 0;background:var(--grad)}
+
+/* FOUNDERS */
+.founders-section{padding:100px 5%;background:linear-gradient(170deg,#040D18 0%,#081828 50%,#0A1E38 100%);position:relative;overflow:hidden}
+.founders-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 50% at 25% 50%,rgba(59,130,246,.06),transparent 65%);pointer-events:none}
+.founders-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.founders-header{text-align:center;margin-bottom:64px}
+.founders-about-title{font-size:clamp(28px,3.5vw,44px);font-weight:700;color:#fff;margin-bottom:16px}
+.founders-subtitle{color:var(--txt);font-size:16px;max-width:560px;margin:0 auto;line-height:1.75}
+.founders-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:48px}
+.founder-card{background:rgba(255,255,255,.025);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.07);border-radius:24px;padding:40px 32px;text-align:center;transition:all .45s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
+.founder-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(59,130,246,.06) 0%,rgba(139,92,246,.04) 100%);opacity:0;transition:opacity .4s}
+.founder-card:hover{transform:translateY(-8px);box-shadow:0 24px 64px rgba(59,130,246,.15),0 0 0 1px rgba(59,130,246,.25);border-color:rgba(59,130,246,.3)}
+.founder-card:hover::before{opacity:1}
+.founder-card-img{width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0 auto 20px;display:block;border:3px solid rgba(59,130,246,.25);box-shadow:0 0 40px rgba(59,130,246,.15);transition:all .4s;position:relative;z-index:1}
+.founder-card:hover .founder-card-img{border-color:rgba(6,214,160,.4);box-shadow:0 0 50px rgba(6,214,160,.2)}
+.founder-card-info{position:relative;z-index:1}
+.founder-name{font-family:'Sora',sans-serif;font-weight:700;font-size:1.2rem;color:#fff;margin-bottom:6px}
+.founder-role{font-size:.88rem;color:var(--txt);line-height:1.65;margin-bottom:8px}
+.founder-tagline{font-size:.82rem;color:var(--acc);font-weight:600}
+.founders-desc{font-size:15px;color:var(--txt);line-height:1.85;text-align:center;max-width:720px;margin:0 auto;position:relative;z-index:1}
+.founders-desc strong{color:var(--hd);font-weight:600}
+
+/* SERVICES */
+section.services{padding:100px 5%;background:var(--bg)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{background:var(--card);border:1px solid var(--cb);border-radius:20px;padding:36px 28px;transition:all .4s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);opacity:0;transition:opacity .4s}
+.service-card:hover::before{opacity:1}
+.service-card:hover{border-color:var(--cbh);transform:translateY(-6px);background:var(--surf-h)}
+.service-icon{width:52px;height:52px;border-radius:14px;background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.15);display:flex;align-items:center;justify-content:center;margin-bottom:24px;transition:all .3s}
+.service-icon svg{width:24px;height:24px;stroke:var(--acc2);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.service-card:hover .service-icon{background:rgba(59,130,246,.15);box-shadow:0 0 24px rgba(59,130,246,.2)}
+.service-card:hover .service-icon svg{stroke:#fff}
+.service-num{position:absolute;right:20px;top:20px;font-family:'Sora';font-size:44px;font-weight:800;color:rgba(255,255,255,.02);line-height:1}
+.service-card h3{font-size:17px;margin-bottom:10px;position:relative;z-index:1;color:var(--hd)}
+.service-card p{font-size:14px;line-height:1.7;position:relative;z-index:1;color:var(--txt)}
+
+/* WHY */
+section.why{padding:100px 5%;background:var(--bg2)}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.why-card{background:var(--card);border:1px solid var(--cb);border-radius:20px;padding:32px;display:flex;gap:20px;align-items:flex-start;transition:all .35s cubic-bezier(.16,1,.3,1)}
+.why-card:hover{border-color:rgba(139,92,246,.3);background:var(--surf-h);transform:translateY(-4px)}
+.why-icon{flex-shrink:0;width:56px;height:56px;background:rgba(139,92,246,.08);border-radius:14px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(139,92,246,.15);transition:all .3s}
+.why-icon svg{width:24px;height:24px;stroke:var(--acc);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.why-card:hover .why-icon{background:rgba(139,92,246,.15);box-shadow:0 0 20px rgba(139,92,246,.15)}
+.why-card h3{font-size:17px;margin-bottom:8px;color:var(--hd)}.why-card p{font-size:14px;color:var(--txt);line-height:1.7}
+
+/* PROCESS */
+section.process{padding:100px 5%;background:var(--bg)}
+.process-timeline{display:flex;gap:0;position:relative}
+.process-timeline::before{content:'';position:absolute;top:30px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--pri),var(--sec),var(--acc));opacity:.25}
+.process-step{flex:1;padding-top:72px;padding-right:28px;position:relative}
+.step-num{width:60px;height:60px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:800;font-size:18px;color:#fff;position:absolute;top:0;left:0;box-shadow:0 0 30px rgba(59,130,246,.3);transition:all .3s}
+.process-step:hover .step-num{transform:scale(1.1);box-shadow:0 0 40px rgba(59,130,246,.45)}
+.process-step h3{font-size:17px;margin-bottom:10px;color:var(--hd)}.process-step p{font-size:13.5px;color:var(--txt);line-height:1.7}
+
+/* PORTFOLIO */
+section.portfolio{padding:100px 5%;background:var(--bg2)}
+.portfolio-coming-wrap{display:flex;justify-content:center;margin-bottom:48px}
+.portfolio-coming-card{background:linear-gradient(135deg,rgba(59,130,246,.06),rgba(139,92,246,.04));border:1px solid rgba(59,130,246,.18);border-radius:24px;padding:56px 48px;max-width:660px;width:100%;text-align:center;position:relative;overflow:hidden;transition:all .4s}
+.portfolio-coming-card:hover{border-color:rgba(59,130,246,.4);box-shadow:0 20px 60px rgba(59,130,246,.12);transform:translateY(-4px)}
+.portfolio-coming-icon{font-size:48px;display:block;margin-bottom:20px;animation:iF 4s ease-in-out infinite}
+@keyframes iF{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.portfolio-coming-card h3{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:700;color:#fff;margin-bottom:14px}
+.portfolio-coming-card p{font-size:15px;color:var(--txt);line-height:1.75;max-width:480px;margin:0 auto}
+.portfolio-coming-dots{display:flex;justify-content:center;gap:10px;margin-top:24px}
+.portfolio-coming-dots span{width:7px;height:7px;border-radius:50%;background:rgba(59,130,246,.4);animation:dP 1.6s ease-in-out infinite}
+.portfolio-coming-dots span:nth-child(2){animation-delay:.3s}.portfolio-coming-dots span:nth-child(3){animation-delay:.6s}
+@keyframes dP{0%,100%{transform:scale(1);opacity:.4}50%{transform:scale(1.4);opacity:1;background:var(--acc)}}
+.btn-portfolio-soon{display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;font-family:'Sora',sans-serif;font-weight:600;font-size:14px;padding:13px 30px;border-radius:50px;border:none;cursor:default;position:relative;overflow:hidden;transition:all .35s}
+.btn-portfolio-soon span{position:relative;z-index:1}.btn-portfolio-soon:hover{box-shadow:0 8px 30px rgba(59,130,246,.3);transform:translateY(-2px)}
+@keyframes pH{0%{box-shadow:0 0 0 0 rgba(59,130,246,0)}30%{box-shadow:0 0 0 12px rgba(59,130,246,.3),inset 0 0 40px rgba(59,130,246,.08)}100%{box-shadow:0 0 0 0 rgba(59,130,246,0)}}
+.portfolio-highlight-active{animation:pH 1.4s ease forwards;border-radius:4px}
+
+/* TESTIMONIALS */
+section.testimonials{padding:100px 5%;background:var(--bg)}
+.add-review-card{background:var(--card);border:2px dashed rgba(59,130,246,.2);border-radius:20px;padding:36px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:220px;cursor:pointer;transition:all .35s}
+.add-review-card:hover{border-color:rgba(59,130,246,.5);background:var(--surf-h);transform:translateY(-4px)}
+.add-review-card .add-icon{font-size:34px;margin-bottom:12px}.add-review-card h4{font-size:16px;color:var(--hd);margin-bottom:6px}.add-review-card p{font-size:13px;color:var(--txt)}
+#user-reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+@media(max-width:1024px){#user-reviews-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){#user-reviews-grid{grid-template-columns:1fr}}
+.published-review{background:var(--card);border:1px solid var(--cb);border-radius:18px;padding:24px;position:relative;overflow:visible;animation:rFI .6s ease}
+@keyframes rFI{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.pub-review-header{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.pub-avatar{width:44px;height:44px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:700;font-size:17px;color:#fff;overflow:hidden;flex-shrink:0}
+.pub-avatar img{width:100%;height:100%;object-fit:cover}.pub-info{flex:1}
+.pub-name{font-family:'Sora',sans-serif;font-weight:600;color:var(--hd);font-size:14px}
+.pub-company{font-size:12px;color:var(--txt)}.pub-stars{color:#FBBF24;font-size:14px;letter-spacing:1px;margin-bottom:10px}
+.pub-message{color:var(--txt-hi);font-size:14px;line-height:1.7}.pub-date{font-size:11px;color:var(--muted);margin-top:12px}
+.pub-del-btn{display:none;position:absolute;top:10px;right:10px;width:28px;height:28px;border-radius:7px;background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.18);color:rgba(239,68,68,.55);font-size:13px;cursor:pointer;align-items:center;justify-content:center;transition:all .2s;z-index:2}
+.pub-del-btn:hover{background:rgba(239,68,68,.18);color:#f87171;transform:scale(1.12)}
+.published-review.lv-owner .pub-del-btn{display:flex}
+@keyframes lvFO{0%{opacity:1;transform:scale(1);max-height:500px;margin-bottom:24px;padding:24px}100%{opacity:0;transform:scale(.93);max-height:0;margin-bottom:0;padding:0;border-width:0}}
+.published-review.lv-deleting{animation:lvFO .42s cubic-bezier(.4,0,.2,1) forwards;pointer-events:none;overflow:hidden}
+
+/* TECH */
+.tech-stack{background:var(--bg2);padding:80px 5%}
+.tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:16px;max-width:860px;margin:0 auto}
+.tech-item{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 10px;border-radius:16px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);transition:all .35s}
+.tech-item:hover{background:rgba(59,130,246,.06);border-color:rgba(59,130,246,.2);transform:translateY(-4px)}
+.tech-item svg{width:34px;height:34px;opacity:.6;transition:opacity .3s}.tech-item:hover svg{opacity:1}
+.tech-item span{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;text-align:center}.tech-item:hover span{color:var(--txt)}
+
+/* CTA */
+.cta-section{background:var(--bg);border-top:1px solid rgba(59,130,246,.1);text-align:center;padding:110px 5%;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(rgba(59,130,246,.1),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(80px);pointer-events:none}
+.cta-section h2{font-size:clamp(28px,4vw,46px);max-width:680px;margin:0 auto 18px;position:relative;z-index:1;color:var(--hd)}
+.cta-section p{font-size:16px;margin-bottom:40px;position:relative;z-index:1;color:var(--txt)}
+.cta-section .btn-primary{position:relative;z-index:1;font-size:15px;padding:16px 38px}
+.cta-stats{display:flex;justify-content:center;gap:52px;margin-top:48px;padding-top:32px;border-top:1px solid rgba(59,130,246,.1)}
+.cta-stat{text-align:center}.cta-stat-num{font-family:'Sora';font-size:28px;font-weight:800;color:var(--hd)}.cta-stat-label{font-size:13px;color:var(--txt);margin-top:4px}
+
+/* FOOTER */
+footer{background:var(--ft-bg);border-top:1px solid rgba(255,255,255,.05);padding:72px 5% 28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
+.footer-brand .logo-text{font-size:18px;color:var(--hd)}
+.footer-brand p{margin-top:14px;font-size:14px;line-height:1.75;color:var(--txt);max-width:260px}
+.footer-email{margin-top:18px;font-size:14px}
+.footer-email a{color:var(--acc);text-decoration:none;transition:color .3s;position:relative;display:inline-block}
+.footer-email a::after{content:'';position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--acc);transition:width .35s}
+.footer-email a:hover{color:#93c5fd}.footer-email a:hover::after{width:100%}
+.socials{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.social-icon{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;color:var(--txt);font-size:13px;font-weight:700;font-family:'Sora',sans-serif;text-decoration:none;transition:all .3s}
+.social-icon:hover{transform:translateY(-3px) scale(1.08);color:#fff}.social-icon:active{transform:scale(.95)}
+.social-icon.si-fb:hover{background:rgba(24,119,242,.15);border-color:rgba(24,119,242,.45);color:#1877F2;box-shadow:0 5px 18px rgba(24,119,242,.25)}
+.social-icon.si-li:hover{background:rgba(10,102,194,.15);border-color:rgba(10,102,194,.45);color:#0A66C2;box-shadow:0 5px 18px rgba(10,102,194,.25)}
+.social-icon.si-ig:hover{background:rgba(225,48,108,.15);border-color:rgba(225,48,108,.45);color:#E1306C;box-shadow:0 5px 18px rgba(225,48,108,.25)}
+.social-icon.si-yt:hover{background:rgba(255,0,0,.12);border-color:rgba(255,0,0,.35);color:#FF0000;box-shadow:0 5px 18px rgba(255,0,0,.2)}
+.footer-col h4{font-size:11px;font-weight:700;color:var(--hd);letter-spacing:2px;margin-bottom:18px;text-transform:uppercase}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.footer-col ul a{color:rgba(148,163,184,.6);text-decoration:none;font-size:13.5px;transition:color .25s}.footer-col ul a:hover{color:#fff}
+.footer-service-item,.footer-company-item{color:rgba(148,163,184,.6);font-size:13.5px;display:inline-block;transition:color .25s;user-select:none}
+.footer-service-item{cursor:default}.footer-about{cursor:default}.footer-portfolio-link,.footer-contact-link{cursor:pointer}
+.footer-service-item:hover,.footer-company-item:hover{color:#e0eeff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:12.5px;color:var(--muted)}
+
+/* MODALS */
+.consult-overlay,.adv-review-overlay,.contact-overlay{position:fixed;inset:0;z-index:9000;background:rgba(4,8,16,.88);backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .35s ease}
+.consult-overlay.active,.adv-review-overlay.active,.contact-overlay.active{opacity:1;pointer-events:all}
+.contact-overlay{z-index:9100}
+.consult-modal,.adv-review-modal{background:rgba(10,22,42,.97);border:1px solid rgba(59,130,246,.2);border-radius:20px;padding:40px 36px;max-width:540px;width:100%;box-shadow:0 30px 80px rgba(0,0,0,.7),0 0 60px rgba(59,130,246,.08);transform:translateY(36px) scale(.96);transition:transform .4s cubic-bezier(.22,1,.36,1);max-height:92vh;overflow-y:auto;position:relative}
+.consult-overlay.active .consult-modal,.adv-review-overlay.active .adv-review-modal{transform:translateY(0) scale(1)}
+.adv-review-modal{border-color:rgba(139,92,246,.2)}
+.consult-close,.adv-close-btn{position:absolute;top:16px;right:18px;background:rgba(255,255,255,.06);border:none;color:rgba(255,255,255,.5);width:32px;height:32px;border-radius:8px;font-size:15px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.consult-close:hover,.adv-close-btn:hover{background:rgba(239,68,68,.15);color:#EF4444}
+.consult-modal h3{font-family:'Sora';font-size:22px;color:#fff;margin-bottom:6px;font-weight:700}
+.consult-modal .modal-sub{color:rgba(148,163,184,.75);font-size:14px;margin-bottom:24px}
+.consult-field{margin-bottom:16px}
+.consult-label{display:block;font-size:11px;font-weight:700;color:var(--acc);margin-bottom:7px;letter-spacing:.7px;text-transform:uppercase}
+.consult-input,.consult-select,.consult-textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 16px;color:#fff;font-size:14px;font-family:'DM Sans',sans-serif;outline:none;transition:all .25s;box-sizing:border-box}
+.consult-input::placeholder,.consult-textarea::placeholder{color:rgba(148,163,184,.35)}
+.consult-input:focus,.consult-select:focus,.consult-textarea:focus{border-color:rgba(59,130,246,.5);background:rgba(59,130,246,.06);box-shadow:0 0 0 3px rgba(59,130,246,.1)}
+.consult-select{cursor:pointer}.consult-select option{background:#0A1628;color:#fff}
+.consult-textarea{resize:vertical;min-height:80px}
+.consult-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.consult-submit{width:100%;background:var(--grad);color:#fff;border:none;padding:14px 28px;border-radius:12px;font-weight:700;font-size:14px;cursor:pointer;transition:all .3s;font-family:'Sora',sans-serif;box-shadow:0 8px 28px rgba(59,130,246,.3);margin-top:6px;display:flex;align-items:center;justify-content:center;gap:10px}
+.consult-submit:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(59,130,246,.45)}
+.consult-trust{text-align:center;font-size:12px;color:rgba(148,163,184,.45);margin-top:10px}
+.consult-success{text-align:center;padding:30px 10px;display:none}
+.consult-success.show{display:block;animation:fadeIn .5s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.success-checkmark{width:66px;height:66px;background:linear-gradient(135deg,var(--pri),var(--acc));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,130,246,.3)}
+.consult-spinner{display:none;width:18px;height:18px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.consult-submit.loading .btn-text{display:none}.consult-submit.loading .consult-spinner{display:block}
+.star-row{display:flex;gap:10px;margin-top:4px}
+.star-btn{font-size:28px;background:none;border:none;cursor:pointer;color:rgba(255,255,255,.15);transition:all .15s;line-height:1;padding:0}
+.star-btn.active{color:#FBBF24;text-shadow:0 0 10px rgba(251,191,36,.5)}.star-btn:hover{transform:scale(1.15)}
+.photo-upload-area{border:1.5px dashed rgba(139,92,246,.25);border-radius:10px;padding:16px;text-align:center;cursor:pointer;transition:all .25s;background:rgba(139,92,246,.03)}
+.photo-upload-area:hover{border-color:rgba(139,92,246,.5);background:rgba(139,92,246,.06)}
+.photo-upload-area input{display:none}
+.adv-submit-btn{width:100%;background:linear-gradient(135deg,#8B5CF6,#3B82F6);color:#fff;border:none;padding:14px 28px;border-radius:12px;font-weight:700;font-size:14px;cursor:pointer;transition:all .3s;font-family:'Sora',sans-serif;box-shadow:0 8px 28px rgba(139,92,246,.3);margin-top:6px;display:flex;align-items:center;justify-content:center;gap:10px}
+.adv-submit-btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(139,92,246,.45)}
+.adv-review-form .review-field{margin-bottom:14px}
+.adv-review-form label{display:block;font-size:11px;font-weight:700;color:#A78BFA;margin-bottom:7px;letter-spacing:.7px;text-transform:uppercase}
+.adv-review-form input,.adv-review-form textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 16px;color:#fff;font-size:14px;font-family:'DM Sans',sans-serif;outline:none;transition:all .25s;box-sizing:border-box}
+.adv-review-form input::placeholder,.adv-review-form textarea::placeholder{color:rgba(148,163,184,.35)}
+.adv-review-form input:focus,.adv-review-form textarea:focus{border-color:rgba(139,92,246,.5);background:rgba(139,92,246,.06);box-shadow:0 0 0 3px rgba(139,92,246,.1)}
+.adv-review-form textarea{resize:vertical;min-height:80px}
+.dup-error{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);color:#FCA5A5;border-radius:10px;padding:12px 16px;font-size:13px;margin-bottom:14px;display:none}
+.contact-modal{background:linear-gradient(145deg,rgba(10,22,42,.98),rgba(6,14,26,.98));border:1px solid rgba(59,130,246,.2);border-radius:20px;padding:40px 36px 36px;max-width:460px;width:100%;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.7),0 0 60px rgba(59,130,246,.08);transform:translateY(36px) scale(.96);transition:transform .4s cubic-bezier(.22,1,.36,1)}
+.contact-overlay.active .contact-modal{transform:translateY(0) scale(1)}
+.contact-close-btn{position:absolute;top:14px;right:16px;background:rgba(255,255,255,.06);border:none;color:rgba(255,255,255,.5);width:32px;height:32px;border-radius:8px;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.contact-close-btn:hover{background:rgba(239,68,68,.15);color:#EF4444}
+.contact-modal-head{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.contact-modal-icon{width:48px;height:48px;border-radius:14px;flex-shrink:0;background:var(--grad-w);display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 0 24px rgba(59,130,246,.3)}
+.contact-modal-title{font-family:'Sora';font-size:20px;font-weight:700;color:#fff}
+.contact-modal-sub{font-size:13px;color:rgba(148,163,184,.65);margin-top:2px}
+.contact-row{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:13px 16px;margin-bottom:10px;transition:all .25s}
+.contact-row:last-child{margin-bottom:0}.contact-row:hover{border-color:rgba(59,130,246,.3);background:rgba(59,130,246,.05)}
+.contact-row-icon{width:34px;height:34px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:16px}
+.contact-row-icon.wa{background:rgba(37,211,102,.12)}.contact-row-icon.ml{background:rgba(59,130,246,.12)}.contact-row-icon.bml{background:rgba(139,92,246,.12)}.contact-row-icon.ig{background:rgba(225,48,108,.12)}
+.contact-row-text{flex:1;min-width:0}
+.contact-row-label{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.contact-row-value{font-size:13px;color:rgba(203,213,225,.85);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.contact-row-value a{color:inherit;text-decoration:none;transition:color .2s}.contact-row-value a:hover{color:#fff}
+.lv-del-overlay{position:fixed;inset:0;z-index:9950;background:rgba(4,8,16,.82);backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .28s ease}
+.lv-del-overlay.lv-active{opacity:1;pointer-events:all}
+.lv-del-modal{background:rgba(10,22,42,.98);border:1px solid rgba(239,68,68,.18);border-radius:18px;padding:32px 28px 28px;max-width:400px;width:100%;box-shadow:0 28px 80px rgba(0,0,0,.7);text-align:center;transform:translateY(28px) scale(.97);transition:transform .32s cubic-bezier(.22,1,.36,1)}
+.lv-del-overlay.lv-active .lv-del-modal{transform:translateY(0) scale(1)}
+.lv-del-icon{width:52px;height:52px;border-radius:50%;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.18);display:flex;align-items:center;justify-content:center;font-size:20px;margin:0 auto 14px}
+.lv-del-title{font-family:'Sora';font-weight:700;font-size:18px;color:#fff;margin-bottom:8px}
+.lv-del-msg{font-size:13px;color:#CBD5E1;line-height:1.65;margin-bottom:22px}
+.lv-del-btns{display:flex;gap:10px;justify-content:center}
+.lv-cancel-btn{flex:1;padding:11px 16px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#CBD5E1;font-family:'Sora';font-weight:600;font-size:13px;cursor:pointer;transition:all .2s}
+.lv-cancel-btn:hover{background:rgba(255,255,255,.1);color:#fff}
+.lv-del-confirm-btn{flex:1;padding:11px 16px;border-radius:10px;background:linear-gradient(135deg,#EF4444,#DC2626);border:none;color:#fff;font-family:'Sora';font-weight:700;font-size:13px;cursor:pointer;transition:all .2s;box-shadow:0 6px 20px rgba(239,68,68,.25)}
+.lv-del-confirm-btn:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(239,68,68,.4)}
+.lv-del-toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(70px);z-index:99999;background:linear-gradient(135deg,#10B981,#059669);color:#fff;padding:13px 24px;border-radius:12px;font-family:'Sora';font-weight:600;font-size:13px;box-shadow:0 10px 40px rgba(16,185,129,.35);opacity:0;transition:all .38s cubic-bezier(.16,1,.3,1);white-space:nowrap}
+.lv-del-toast.lv-show{transform:translateX(-50%) translateY(0);opacity:1}
+.success-toast{position:fixed;bottom:30px;right:30px;z-index:99999;background:linear-gradient(135deg,#10B981,#059669);color:#fff;padding:16px 24px;border-radius:12px;font-weight:600;font-size:14px;box-shadow:0 10px 40px rgba(16,185,129,.35);transform:translateY(80px);opacity:0;transition:all .4s cubic-bezier(.16,1,.3,1);font-family:'Sora'}
+.success-toast.show{transform:translateY(0);opacity:1}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* RESPONSIVE */
+@media(max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr;gap:36px}.founders-grid{gap:24px}}
+@media(max-width:768px){.hero-container{grid-template-columns:1fr}.hero-visual{display:none}.hero{padding:130px 5% 80px}.services-grid,.why-grid{grid-template-columns:1fr}.founders-grid{grid-template-columns:1fr}.process-timeline{flex-direction:column;gap:48px}.process-timeline::before{display:none}.process-step{padding-top:0;padding-left:78px;padding-right:0}.step-num{top:0;left:0}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero-stats{flex-wrap:wrap;gap:24px}.trust-stats{gap:36px}.cta-stats{flex-direction:column;gap:18px}.tech-grid{grid-template-columns:repeat(4,1fr);gap:12px}.consult-grid{grid-template-columns:1fr}.consult-modal,.adv-review-modal{padding:32px 22px}section.services,section.why,section.process,section.portfolio,section.testimonials{padding:80px 5%}}
+@media(max-width:480px){.trust-stats{gap:24px}.tech-grid{grid-template-columns:repeat(3,1fr)}.portfolio-coming-card{padding:36px 20px}}
+
+
+/* ═══ ENHANCED ANIMATIONS ═══ */
+/* Staggered card reveals */
+.service-card,.why-card,.founder-card,.tech-item,.process-step{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1),box-shadow .4s ease,border-color .4s ease,background .4s ease}
+.service-card.v,.why-card.v,.founder-card.v,.tech-item.v,.process-step.v{opacity:1;transform:translateY(0)}
+.service-card:nth-child(1),.why-card:nth-child(1){transition-delay:.05s}
+.service-card:nth-child(2),.why-card:nth-child(2){transition-delay:.12s}
+.service-card:nth-child(3),.why-card:nth-child(3){transition-delay:.19s}
+.service-card:nth-child(4),.why-card:nth-child(4){transition-delay:.26s}
+.service-card:nth-child(5){transition-delay:.33s}
+.service-card:nth-child(6){transition-delay:.40s}
+.founder-card:nth-child(2){transition-delay:.12s}
+
+/* Icon micro-interactions */
+.service-icon{transition:all .4s cubic-bezier(.16,1,.3,1)}
+.service-card:hover .service-icon{transform:scale(1.1) rotate(-3deg)}
+.why-icon{transition:all .4s cubic-bezier(.16,1,.3,1)}
+.why-card:hover .why-icon{transform:scale(1.08) rotate(3deg)}
+
+/* Card hover glow ring */
+.service-card:hover{box-shadow:0 20px 60px rgba(59,130,246,.12),0 0 0 1px rgba(59,130,246,.2)}
+.why-card:hover{box-shadow:0 16px 48px rgba(139,92,246,.1),0 0 0 1px rgba(139,92,246,.2)}
+
+/* Button ripple effect */
+.btn-primary{transition:all .35s cubic-bezier(.16,1,.3,1),box-shadow .4s ease}
+.btn-primary:active{transform:translateY(0) scale(.97);box-shadow:0 4px 16px rgba(59,130,246,.25)}
+
+/* Nav link underline animation */
+.nav-links a{position:relative}.nav-links a::after{content:'';position:absolute;bottom:-4px;left:50%;width:0;height:1.5px;background:var(--acc);transition:width .3s ease,left .3s ease;border-radius:1px}
+.nav-links a:hover::after{width:100%;left:0}
+
+/* Smooth section dividers */
+section.services::before,section.why::before,section.process::before{content:'';position:absolute;top:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(59,130,246,.15),transparent)}
+section.services,section.why,section.process{position:relative}
+
+/* Trust stat hover */
+.trust-stat{transition:transform .35s cubic-bezier(.16,1,.3,1)}.trust-stat:hover{transform:translateY(-4px)}
+
+/* Tech item entrance */
+.tech-item:nth-child(1){transition-delay:.02s}.tech-item:nth-child(2){transition-delay:.06s}.tech-item:nth-child(3){transition-delay:.10s}.tech-item:nth-child(4){transition-delay:.14s}
+.tech-item:nth-child(5){transition-delay:.18s}.tech-item:nth-child(6){transition-delay:.22s}.tech-item:nth-child(7){transition-delay:.26s}.tech-item:nth-child(8){transition-delay:.30s}
+
+/* Process step hover */
+.process-step{transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.process-step h3{transition:color .3s ease}.process-step:hover h3{color:var(--acc2)}
+
+/* Founder card image pulse on hover */
+@keyframes imgPulse{0%,100%{box-shadow:0 0 40px rgba(59,130,246,.15)}50%{box-shadow:0 0 55px rgba(6,214,160,.25)}}
+.founder-card:hover .founder-card-img{animation:imgPulse 2s ease-in-out infinite}
+
+/* Portfolio card shimmer */
+.portfolio-coming-card::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.03),transparent);transition:left .8s ease}
+.portfolio-coming-card:hover::after{left:150%}
+
+/* Smooth page load */
+@keyframes pageIn{from{opacity:0}to{opacity:1}}
+body{animation:pageIn .6s ease}
+
+/* CHANGE 4: FOUNDER IMAGE — face-focused crop */
+.founder-card-img{object-position:center 25%!important;transform:scale(1.08)}
+.founder-card:hover .founder-card-img{transform:scale(1.12)}
+
+/* CHANGE 5: VISUAL POLISH */
+section.services,section.why,section.process,section.portfolio,section.testimonials{padding:110px 5%}
+@media(max-width:768px){section.services,section.why,section.process,section.portfolio,section.testimonials{padding:80px 5%}}
+.section-header{margin-bottom:72px}
+.services-grid{gap:24px}
+.why-grid{gap:28px}
+.founders-grid{gap:36px}
+footer{padding:80px 5% 32px}
+
+/* ═══════════════════════════════════════════
+   PREMIUM SCROLL ANIMATION SYSTEM
+═══════════════════════════════════════════ */
+
+/* Base hidden state for all animated elements */
+[data-anim]{opacity:0;will-change:opacity,transform}
+[data-anim].anim-done{opacity:1;transform:none!important}
+
+/* Fade Up (default) */
+[data-anim="fade-up"]{transform:translateY(52px)}
+[data-anim="fade-up"].anim-done{transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+
+/* Fade Down */
+[data-anim="fade-down"]{transform:translateY(-40px)}
+[data-anim="fade-down"].anim-done{transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+
+/* Fade Left */
+[data-anim="fade-left"]{transform:translateX(-56px)}
+[data-anim="fade-left"].anim-done{transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+
+/* Fade Right */
+[data-anim="fade-right"]{transform:translateX(56px)}
+[data-anim="fade-right"].anim-done{transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+
+/* Scale In */
+[data-anim="scale-in"]{transform:scale(.88)}
+[data-anim="scale-in"].anim-done{transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+
+/* Zoom + Fade */
+[data-anim="zoom-fade"]{transform:scale(.92) translateY(24px)}
+[data-anim="zoom-fade"].anim-done{transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+
+/* Flip Up */
+[data-anim="flip-up"]{transform:perspective(600px) rotateX(18deg) translateY(32px)}
+[data-anim="flip-up"].anim-done{transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+
+/* Delay variants */
+[data-delay="100"].anim-done{transition-delay:.1s!important}
+[data-delay="150"].anim-done{transition-delay:.15s!important}
+[data-delay="200"].anim-done{transition-delay:.2s!important}
+[data-delay="250"].anim-done{transition-delay:.25s!important}
+[data-delay="300"].anim-done{transition-delay:.3s!important}
+[data-delay="350"].anim-done{transition-delay:.35s!important}
+[data-delay="400"].anim-done{transition-delay:.4s!important}
+[data-delay="500"].anim-done{transition-delay:.5s!important}
+[data-delay="600"].anim-done{transition-delay:.6s!important}
+
+/* ── Section Tag animated underline ── */
+.section-tag-anim{position:relative;display:inline-flex}
+.section-tag-anim::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--acc);border-radius:2px;transition:width .6s cubic-bezier(.16,1,.3,1) .4s}
+.section-tag-anim.anim-done::after{width:100%}
+
+/* ── Glowing line reveal ── */
+.line-reveal{height:1.5px;background:linear-gradient(90deg,transparent,var(--pri),var(--acc),transparent);transform:scaleX(0);transform-origin:left;transition:transform .9s cubic-bezier(.16,1,.3,1)}
+.line-reveal.anim-done{transform:scaleX(1)}
+
+/* ── Floating particles in hero ── */
+@keyframes floatParticle{0%{transform:translateY(0) translateX(0) scale(1);opacity:.6}33%{transform:translateY(-22px) translateX(12px) scale(1.1);opacity:.9}66%{transform:translateY(-10px) translateX(-8px) scale(.95);opacity:.7}100%{transform:translateY(0) translateX(0) scale(1);opacity:.6}}
+.particle{position:absolute;border-radius:50%;pointer-events:none;animation:floatParticle var(--dur,6s) ease-in-out var(--del,0s) infinite}
+
+/* ── Scroll progress bar ── */
+#scroll-progress-bar{position:fixed;top:0;left:0;height:2.5px;background:linear-gradient(90deg,var(--pri),var(--acc),var(--sec));z-index:9999;width:0%;transition:width .1s linear;border-radius:0 2px 2px 0;box-shadow:0 0 8px rgba(59,130,246,.6)}
+
+/* ── Section spotlight hover ── */
+.section-spotlight{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,.04) 0%,transparent 70%);pointer-events:none;transform:translate(-50%,-50%);opacity:0;transition:opacity .4s;z-index:0}
+
+/* ── Card tilt effect ── */
+.tilt-card{transform-style:preserve-3d;transition:transform .1s ease}
+
+/* ── Typing cursor ── */
+@keyframes blinkCursor{0%,100%{opacity:1}50%{opacity:0}}
+.typing-cursor{display:inline-block;width:2px;height:1em;background:var(--acc);vertical-align:middle;margin-left:2px;animation:blinkCursor .7s step-end infinite}
+
+/* ── Counter number ── */
+.count-up{display:inline-block}
+
+/* ── Glow pulse on section entry ── */
+@keyframes sectionGlowIn{0%{box-shadow:0 0 0 rgba(59,130,246,0)}50%{box-shadow:0 0 60px rgba(59,130,246,.08)}100%{box-shadow:0 0 0 rgba(59,130,246,0)}}
+
+/* ── Stagger children ── */
+.stagger-children>[data-anim]:nth-child(1){--base-delay:0ms}
+.stagger-children>[data-anim]:nth-child(2){--base-delay:90ms}
+.stagger-children>[data-anim]:nth-child(3){--base-delay:180ms}
+.stagger-children>[data-anim]:nth-child(4){--base-delay:270ms}
+.stagger-children>[data-anim]:nth-child(5){--base-delay:360ms}
+.stagger-children>[data-anim]:nth-child(6){--base-delay:450ms}
+.stagger-children>[data-anim].anim-done{transition-delay:var(--base-delay,0ms)!important}
+
+/* ── Hero content initial animation ── */
+@keyframes heroSlideIn{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:translateY(0)}}
+.hero-content>*{animation:heroSlideIn .9s cubic-bezier(.16,1,.3,1) both}
+.hero-content .hero-badge{animation-delay:.05s}
+.hero-content h1{animation-delay:.18s}
+.hero-content p{animation-delay:.32s}
+.hero-content .hero-btns{animation-delay:.44s}
+.hero-content .hero-stats{animation-delay:.56s}
+
+/* ── Hero visual entry ── */
+@keyframes heroVisualIn{from{opacity:0;transform:translateX(50px) scale(.95)}to{opacity:1;transform:translateX(0) scale(1)}}
+.hero-visual{animation:heroVisualIn 1.1s cubic-bezier(.16,1,.3,1) .3s both}
+
+/* ── Shimmer text on section titles ── */
+@keyframes shimmerText{0%{background-position:-200% center}100%{background-position:200% center}}
+.shimmer-title{background:linear-gradient(90deg,var(--hd) 0%,var(--acc) 40%,var(--pri) 60%,var(--hd) 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmerText 3.5s linear infinite}
+.shimmer-title.paused{animation-play-state:paused}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P83WEV31DD"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-P83WEV31DD');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Leovantage Web Studio","description":"AI-powered digital agency specializing in website development, web applications, mobile apps, and UI/UX design.","url":"https://leovantagewebstudio.com","logo":"https://leovantagewebstudio.com/assets/images/logo/leovantage-web-studio-icon.png","email":"info@leovantagewebstudio.com","telephone":"+916265946072","founder":[{"@type":"Person","name":"Gulesh Patel","jobTitle":"Co-Founder & Web/App Developer"},{"@type":"Person","name":"Nitin Sinha","jobTitle":"Co-Founder & Operations Manager"}],"serviceType":["AI Website Development","Custom Web Applications","Mobile App Development","UI/UX Design","SEO Optimization"],"areaServed":"Worldwide"}</script>
+</head>
+<body>
+<a href="#main-content" class="sr-only" style="position:fixed;top:0;left:0;z-index:10000;padding:12px 20px;background:var(--pri);color:#fff;font-weight:700;text-decoration:none;border-radius:0 0 8px 0" onfocus="this.style.position='fixed';this.style.width='auto';this.style.height='auto';this.style.clip='auto'" onblur="this.style.position='fixed';this.style.width='1px';this.style.height='1px';this.style.clip='rect(0,0,0,0)'">Skip to main content</a>
+<div id="scroll-progress-bar"></div>
+<nav aria-label="Main navigation"><a href="#" class="logo"><img src="assets/images/logo/leovantage-web-studio-icon.png" alt="Leovantage Web Studio logo"><div class="logo-text">Leovantage <span>Web Studio</span></div></a><ul class="nav-links"><li><a href="#services">Services</a></li><li><a href="#why">Why Us</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="#contact">Contact</a></li></ul><a href="https://wa.me/916265946072?text=Hi%20Leovantage%20Web%20Studio,%20I%20want%20to%20discuss%20my%20project." target="_blank" rel="noopener noreferrer" class="nav-cta" title="Chat on WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.472 3.506C18.198 1.232 15.13 0 11.873 0 5.385 0 .105 5.28.102 11.77c-.001 2.074.541 4.098 1.571 5.882L0 24l6.515-1.709a11.79 11.79 0 0 0 5.352 1.364h.005c6.486 0 11.765-5.28 11.768-11.771.002-3.144-1.224-6.104-3.168-8.378zm-8.599 18.11h-.004a9.79 9.79 0 0 1-4.992-1.369l-.358-.213-3.712.974.99-3.62-.234-.372a9.763 9.763 0 0 1-1.497-5.245c.003-5.395 4.394-9.785 9.793-9.785 2.616.001 5.074 1.02 6.922 2.868a9.72 9.72 0 0 1 2.866 6.919c-.003 5.396-4.394 9.843-9.774 9.843zm5.37-7.338c-.295-.147-1.744-.86-2.014-.958-.27-.099-.467-.148-.664.148-.196.295-.762.958-.934 1.154-.172.196-.344.221-.639.074-.295-.148-1.245-.459-2.372-1.462-.877-.781-1.469-1.746-1.641-2.041-.172-.295-.018-.455.129-.602.132-.132.295-.344.442-.517.148-.172.197-.295.295-.492.099-.197.05-.369-.025-.517-.074-.147-.664-1.6-.909-2.19-.24-.576-.483-.498-.664-.507l-.566-.01a1.087 1.087 0 0 0-.787.369c-.27.295-1.032 1.008-1.032 2.46 0 1.451 1.056 2.854 1.203 3.05.148.197 2.078 3.172 5.034 4.449.703.304 1.252.485 1.68.621.706.224 1.349.193 1.857.117.566-.085 1.744-.714 1.99-1.403.246-.689.246-1.28.172-1.403-.074-.123-.27-.197-.566-.344z"/></svg>WhatsApp Us</a><div class="hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div></nav>
+<div class="mobile-menu" id="mobileMenu" onclick="closeMobileMenuOnBackdrop(event)"><div class="mobile-menu-drawer"><a href="#services" class="mobile-menu-link" onclick="closeMobileMenu()">Services</a><a href="#why" class="mobile-menu-link" onclick="closeMobileMenu()">Why Us</a><a href="#portfolio" class="mobile-menu-link" onclick="closeMobileMenu()">Portfolio</a><a href="#testimonials" class="mobile-menu-link" onclick="closeMobileMenu()">Reviews</a><a href="#contact" class="mobile-menu-link" onclick="closeMobileMenu()">Contact</a><div class="mobile-menu-divider"></div><a href="https://wa.me/916265946072?text=Hi%20Leovantage%20Web%20Studio,%20I%20want%20to%20discuss%20my%20project." target="_blank" rel="noopener noreferrer" class="mobile-menu-cta" onclick="closeMobileMenu()"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.472 3.506C18.198 1.232 15.13 0 11.873 0 5.385 0 .105 5.28.102 11.77c-.001 2.074.541 4.098 1.571 5.882L0 24l6.515-1.709a11.79 11.79 0 0 0 5.352 1.364h.005c6.486 0 11.765-5.28 11.768-11.771.002-3.144-1.224-6.104-3.168-8.378z"/></svg>WhatsApp Us →</a></div></div>
+<main id="main-content">
+<section class="hero"><div class="hero-bg"></div><div class="hero-grid"></div><div class="hero-container"><div class="hero-content"><div class="hero-badge rv"><span class="bd"></span>AI-Powered Digital Agency</div><h1 class="rv rv-1">We Build AI-Powered Websites &amp; Apps That <span class="gt">Accelerate Growth</span></h1><p class="rv rv-2">High-performance websites and custom applications powered by advanced AI — helping businesses scale faster, smarter, and more efficiently.</p><div class="hero-btns rv rv-3"><button onclick="openConsultModal()" class="btn-primary cta-float">Book Free Consultation →</button><a href="#portfolio" class="btn-secondary">View Our Work →</a></div><div class="hero-stats rv rv-4"><div class="hero-stat"><div class="stat-num">AI-First</div><div class="stat-label">Development Approach</div></div><div class="hero-stat"><div class="stat-num">Modern</div><div class="stat-label">Tech Stack</div></div><div class="hero-stat"><div class="stat-num">Quality</div><div class="stat-label">Focused Delivery</div></div></div></div><div class="hero-visual"><div class="glow-orb-1"></div><div class="glow-orb-2"></div><div class="mockup-browser"><div class="browser-bar"><div class="browser-dots"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span></div><div class="browser-url">leovantage.com/client-project</div></div><div class="browser-content"><div class="browser-hero-mock"></div><div class="mock-row"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div><div class="mock-line med"></div><div class="mock-line short"></div><div style="margin-top:12px"><div class="mock-btn-mock"></div></div><div class="mock-row" style="margin-top:12px"><div class="mock-card"></div><div class="mock-card"></div></div></div></div><div class="mockup-phone"><div class="phone-notch"><div class="phone-notch-inner"></div></div><div class="phone-content"><div class="phone-card"></div><div class="phone-mini"></div><div class="phone-mini sh"></div><div class="phone-mini"></div><div class="phone-card" style="height:40px"></div><div class="phone-mini" style="margin-top:6px"></div><div class="phone-mini sh"></div></div></div></div></div></section>
+<section class="trust"><div class="trust-inner rv"><div class="trust-label" data-anim="fade-up">Building Digital Success Stories</div><div class="trust-stats"><div class="trust-stat" data-anim="fade-up" data-delay="100"><div class="trust-stat-num count-up" data-count-text="AI-First">AI-First</div><div class="trust-stat-label">Technology Stack</div><div class="trust-stat-bar"></div></div><div class="trust-stat" data-anim="fade-up" data-delay="200"><div class="trust-stat-num count-up" data-count-text="Modern">Modern</div><div class="trust-stat-label">Design Approach</div><div class="trust-stat-bar"></div></div><div class="trust-stat" data-anim="fade-up" data-delay="300"><div class="trust-stat-num count-up" data-count-text="Dedicated">Dedicated</div><div class="trust-stat-label">Client Support</div><div class="trust-stat-bar"></div></div><div class="trust-stat" data-anim="fade-up" data-delay="400"><div class="trust-stat-num count-up" data-count-text="Growing">Growing</div><div class="trust-stat-label">Project Portfolio</div><div class="trust-stat-bar"></div></div></div></div></section>
+<section class="founders-section" id="founders"><div class="founders-inner"><div class="founders-header rv"><div class="section-tag" data-anim="fade-up">Who We Are</div><h2 class="founders-about-title" data-anim="fade-up" data-delay="100">Meet the Founders</h2><p class="founders-subtitle" data-anim="fade-up" data-delay="200">Leovantage Web Studio was founded with a vision to help businesses build a powerful digital presence in the modern AI-driven world.</p></div><div class="founders-grid"><div class="founder-card rv" data-anim="fade-left"><img src="assets/images/founders/gulesh-patel-founder.png" alt="Gulesh Patel Co-Founder of Leovantage Web Studio" class="founder-card-img"><div class="founder-card-info"><div class="founder-name">Gulesh Patel</div><div class="founder-role">Co-Founder &amp; Web / App Designer and Developer — Crafting seamless, high-performance digital experiences through clean code and creative design.</div><div class="founder-tagline">Where creativity meets code</div></div></div><div class="founder-card rv rv-1" data-anim="fade-right" data-delay="100"><img src="assets/images/founders/nitin-sinha-founder.png" alt="Nitin Sinha Co-Founder of Leovantage Web Studio" class="founder-card-img"><div class="founder-card-info"><div class="founder-name">Nitin Sinha</div><div class="founder-role">Co-Founder &amp; Operations Manager — The driving force behind every project, keeping the team aligned, clients happy, and everything running like clockwork.</div><div class="founder-tagline">Where strategy meets execution</div></div></div></div><p class="founders-desc rv" data-anim="fade-up" data-delay="150">We specialize in creating <strong>high-performance AI-powered websites</strong>, web applications, and mobile apps that help brands grow online and stay ahead in the digital era. Our mission is to make modern technology accessible for businesses and help them transform ideas into powerful digital platforms.</p></div></section>
+<section class="services" id="services"><div class="container"><div class="section-header rv"><div class="section-tag" data-anim="fade-up">What We Do</div><h2 class="section-title" data-anim="fade-up" data-delay="100">Our Core Services</h2><p class="section-sub" data-anim="fade-up" data-delay="200">End-to-end digital solutions engineered with AI to give your business a competitive edge.</p></div><div class="services-grid stagger-children"><div class="service-card rv" data-anim="flip-up"><div class="service-num">01</div><div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><h3>AI Website Development</h3><p>High-converting, AI-enhanced websites designed for speed, performance, and business growth.</p></div><div class="service-card rv rv-1" data-anim="flip-up"><div class="service-num">02</div><div class="service-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div><h3>Custom Web Applications</h3><p>Scalable, secure web apps tailored to your unique needs with modern frameworks and enterprise architecture.</p></div><div class="service-card rv rv-2" data-anim="flip-up"><div class="service-num">03</div><div class="service-icon"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div><h3>Mobile App Development</h3><p>Modern mobile applications for iOS and Android that deliver exceptional experiences and engagement.</p></div><div class="service-card rv" data-anim="flip-up"><div class="service-num">04</div><div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20M2 12h20"/></svg></div><h3>UI/UX Design</h3><p>Human-centered digital experiences crafted to delight users and convert visitors into customers.</p></div><div class="service-card rv rv-1" data-anim="flip-up"><div class="service-num">05</div><div class="service-icon"><svg viewBox="0 0 24 24"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg></div><h3>Website Redesign</h3><p>Transform outdated websites into powerful conversion machines with modern design and optimized UX.</p></div><div class="service-card rv rv-2" data-anim="flip-up"><div class="service-num">06</div><div class="service-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3>SEO &amp; Performance</h3><p>Speed, search visibility, and technical optimization to boost traffic and ensure peak performance.</p></div></div></div></section>
+<section class="why" id="why"><div class="container"><div class="section-header rv"><div class="section-tag" data-anim="fade-up">Our Difference</div><h2 class="section-title" data-anim="fade-up" data-delay="100">Why Leovantage Web Studio?</h2><p class="section-sub" data-anim="fade-up" data-delay="200">We combine AI intelligence with human creativity to deliver results beyond expectations.</p></div><div class="why-grid stagger-children"><div class="why-card rv" data-anim="fade-left"><div class="why-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div><h3>AI-Driven Efficiency</h3><p>Cutting-edge AI tools to streamline development, reduce time-to-market, and produce smarter outcomes.</p></div></div><div class="why-card rv rv-1" data-anim="fade-right"><div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><div><h3>Business-Focused Strategy</h3><p>Every pixel and line of code serves a business purpose — aligned with your goals for measurable growth.</p></div></div><div class="why-card rv rv-2" data-anim="fade-left"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></div><div><h3>Fast &amp; Reliable Delivery</h3><p>Agile delivery ensures projects ship on time, within budget, and exceed quality benchmarks.</p></div></div><div class="why-card rv rv-3" data-anim="fade-right"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><h3>Long-Term Partnership</h3><p>Your strategic digital partner for the long haul — ongoing support, optimization, and innovation.</p></div></div></div></div></section>
+<section class="process" id="process"><div class="container"><div class="section-header rv"><div class="section-tag" data-anim="fade-up">How We Work</div><h2 class="section-title" data-anim="fade-up" data-delay="100">Our Development Process</h2><p class="section-sub" data-anim="fade-up" data-delay="200">A streamlined 4-step journey from idea to a live, high-performing digital product.</p></div><div class="process-timeline"><div class="process-step rv" data-anim="fade-up" data-delay="50"><div class="step-num">01</div><h3>Discovery &amp; Strategy</h3><p>Deep-dive into your goals, audience, and landscape to craft a data-backed digital strategy.</p></div><div class="process-step rv rv-1" data-anim="fade-up" data-delay="150"><div class="step-num" style="background:linear-gradient(135deg,#6D28D9,#8B5CF6)">02</div><h3>Design &amp; Prototyping</h3><p>Wireframes, UI mockups, and interactive prototypes that visualize your product before code.</p></div><div class="process-step rv rv-2" data-anim="fade-up" data-delay="250"><div class="step-num" style="background:linear-gradient(135deg,#8B5CF6,#06D6A0)">03</div><h3>AI-Enhanced Development</h3><p>Modern tech stacks powered by AI — performant, scalable, secure applications for growth.</p></div><div class="process-step rv rv-3" data-anim="fade-up" data-delay="350"><div class="step-num" style="background:linear-gradient(135deg,#06D6A0,#3B82F6)">04</div><h3>Launch &amp; Support</h3><p>Deployment, performance monitoring, and continuous support for long-term success.</p></div></div></div></section>
+<section class="portfolio" id="portfolio"><div class="container"><div class="section-header rv"><div class="section-tag" data-anim="fade-up">Our Work</div><h2 class="section-title" data-anim="fade-up" data-delay="100">Recent Projects</h2><p class="section-sub" data-anim="fade-up" data-delay="200">A glimpse into the work we've done for ambitious brands and growing startups.</p></div><div class="portfolio-coming-wrap rv" data-anim="zoom-fade"><div class="portfolio-coming-card"><span class="portfolio-coming-icon">🚀</span><h3>Exciting Projects Coming Soon</h3><p>We're currently building innovative solutions and will showcase them here shortly. Stay tuned!</p><div class="portfolio-coming-dots"><span></span><span></span><span></span></div></div></div><div class="text-center rv" data-anim="fade-up" data-delay="200"><button class="btn-portfolio-soon" onclick="return false"><span>View Full Portfolio →</span></button></div></div></section>
+<section class="testimonials" id="testimonials"><div class="container"><div class="section-header rv"><div class="section-tag" data-anim="fade-up">Reviews</div><h2 class="section-title" data-anim="fade-up" data-delay="100">Client Feedback</h2><p class="section-sub" data-anim="fade-up" data-delay="200">We value honest feedback. Share your experience working with us.</p></div><div style="display:flex;justify-content:center;margin-bottom:48px" class="rv" data-anim="scale-in"><div class="add-review-card" onclick="openAdvReviewModal()" style="max-width:360px;width:100%;cursor:pointer"><div class="add-icon">✍️</div><h4>Share Your Experience</h4><p>Worked with us? We'd love to hear from you.</p><button class="btn-primary" style="margin-top:16px;font-size:13px;padding:10px 22px" onclick="openAdvReviewModal()">+ Add Your Review</button></div></div><div id="user-reviews-grid"></div></div></section>
+<div class="adv-review-overlay" id="advReviewModal"><div class="adv-review-modal"><button class="adv-close-btn" onclick="closeAdvReviewModal()">✕</button><h3 style="font-family:'Sora',sans-serif;font-size:21px;color:#fff;margin-bottom:6px;font-weight:700">Leave a Review ⭐</h3><p style="color:rgba(148,163,184,.75);font-size:13.5px;margin-bottom:20px">Your honest feedback helps others trust us.</p><div class="dup-error" id="dupError">You have already submitted a review.</div><div class="adv-review-form" id="advReviewForm"><div class="review-field"><label>Your Rating *</label><div class="star-row"><button class="star-btn" onclick="setAdvRating(1)">★</button><button class="star-btn" onclick="setAdvRating(2)">★</button><button class="star-btn" onclick="setAdvRating(3)">★</button><button class="star-btn" onclick="setAdvRating(4)">★</button><button class="star-btn" onclick="setAdvRating(5)">★</button></div></div><div class="review-field"><label>Full Name *</label><input type="text" id="advName" placeholder="e.g. Rahul Sharma"></div><div class="review-field"><label>Email Address *</label><input type="email" id="advEmail" placeholder="e.g. rahul@gmail.com"></div><div class="review-field"><label>Company Name (Optional)</label><input type="text" id="advCompany" placeholder="e.g. Tech Startup Pvt Ltd"></div><div class="review-field"><label>Your Review *</label><textarea id="advMessage" rows="4" placeholder="Tell us about your experience..."></textarea></div><div class="review-field"><label>Profile Photo (Optional)</label><div class="photo-upload-area" onclick="document.getElementById('advPhoto').click()"><input type="file" id="advPhoto" accept="image/*" onchange="previewPhoto(this)"><div id="photoPreviewContainer"><div style="font-size:26px;margin-bottom:6px">📷</div><div style="color:rgba(148,163,184,.6);font-size:12px">Click to upload (optional)</div></div></div></div><button class="adv-submit-btn" id="advSubmitBtn" onclick="submitAdvReview()"><span class="btn-text">✦ Submit Review →</span><div class="consult-spinner" style="display:none" id="reviewSpinner"></div></button></div><div id="advReviewSuccess" style="text-align:center;padding:30px 10px;display:none"><div class="success-checkmark" style="background:linear-gradient(135deg,#8B5CF6,#3B82F6)">✓</div><h4 style="color:#fff;font-family:'Sora',sans-serif;font-size:19px;margin-bottom:10px">Thank you!</h4><p style="color:rgba(148,163,184,.75);font-size:14px;margin-bottom:18px">Your review has been published.</p><button onclick="closeAdvReviewModal()" class="btn-primary" style="font-size:13px;padding:12px 24px">Back to Website</button></div></div></div>
+<div class="consult-overlay" id="consultModal"><div class="consult-modal"><button class="consult-close" onclick="closeConsultModal()">✕</button><div id="consultFormSection"><div style="display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.2);padding:5px 14px;border-radius:50px;font-size:10px;font-weight:700;color:var(--acc);margin-bottom:14px;letter-spacing:1.5px;text-transform:uppercase">📅 FREE CONSULTATION</div><h3>Book Your Free Strategy Call</h3><p class="modal-sub">Fill the form below and our team will contact you within 24 hours.</p><div class="consult-field"><label class="consult-label">Full Name *</label><input type="text" class="consult-input" id="cName" placeholder="e.g. Rahul Sharma"></div><div class="consult-field"><label class="consult-label">Business Name</label><input type="text" class="consult-input" id="cBusiness" placeholder="e.g. My Startup Pvt Ltd"></div><div class="consult-field"><label class="consult-label">Email Address *</label><input type="email" class="consult-input" id="cEmail" placeholder="e.g. you@email.com"></div><div class="consult-field"><label class="consult-label">Phone / WhatsApp *</label><input type="tel" class="consult-input" id="cPhone" placeholder="e.g. +91 98765 43210"></div><div class="consult-grid"><div class="consult-field"><label class="consult-label">Service Needed</label><select class="consult-select" id="cService"><option value="">Select service</option><option>Website</option><option>Web App</option><option>Mobile App</option><option>Website Redesign</option><option>Not Sure</option></select></div><div class="consult-field"><label class="consult-label">Budget Range <span style="color:#EF4444">*</span></label><select class="consult-select" id="cBudget" required><option value="">Select budget</option><option value="₹5K – ₹15K">₹5K – ₹15K</option><option value="₹15K – ₹25K">₹15K – ₹25K</option><option value="₹25K – ₹50K">₹25K – ₹50K</option><option value="₹50K – ₹1L">₹50K – ₹1L</option><option value="₹1L+">₹1L+</option></select></div></div><div class="consult-field"><label class="consult-label">Project Brief</label><textarea class="consult-textarea" id="cBrief" placeholder="Short description of your project..."></textarea></div><button class="consult-submit" id="consultSubmitBtn" onclick="submitConsultForm()"><span class="btn-text">Schedule My Free Call →</span><div class="consult-spinner" id="consultSpinner"></div></button><p class="consult-trust">🔒 Free 30-minute consultation • No obligation</p></div><div class="consult-success" id="consultSuccess"><div class="success-checkmark">✓</div><h4 style="color:#fff;font-family:'Sora',sans-serif;font-size:21px;margin-bottom:10px">Thank You!</h4><p style="color:rgba(148,163,184,.75);font-size:14px;margin-bottom:22px">Your consultation request has been sent. Our team will contact you within 24 hours.</p><a href="https://wa.me/916265946072?text=Hi%20Leovantage%20Web%20Studio,%20I%20want%20to%20discuss%20my%20project." target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:inline-flex;font-size:13px;padding:12px 26px"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M20.472 3.506C18.198 1.232 15.13 0 11.873 0 5.385 0 .105 5.28.102 11.77c-.001 2.074.541 4.098 1.571 5.882L0 24l6.515-1.709a11.79 11.79 0 0 0 5.352 1.364h.005c6.486 0 11.765-5.28 11.768-11.771.002-3.144-1.224-6.104-3.168-8.378z"/></svg>Chat on WhatsApp →</a></div></div></div>
+<a href="https://wa.me/916265946072?text=Hi%20Leovantage%20Web%20Studio,%20I%20want%20to%20discuss%20my%20project." target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Chat on WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.472 3.506C18.198 1.232 15.13 0 11.873 0 5.385 0 .105 5.28.102 11.77c-.001 2.074.541 4.098 1.571 5.882L0 24l6.515-1.709a11.79 11.79 0 0 0 5.352 1.364h.005c6.486 0 11.765-5.28 11.768-11.771.002-3.144-1.224-6.104-3.168-8.378z"/></svg></a>
+<section class="tech-stack rv" id="tech"><div class="container"><div class="section-header"><div class="section-tag" data-anim="fade-up">Our Technology</div><h2 class="section-title" data-anim="fade-up" data-delay="100">Built With Modern Tech</h2><p class="section-sub" data-anim="fade-up" data-delay="200">Industry-leading technologies and frameworks for robust, scalable solutions.</p></div><div class="tech-grid stagger-children"><div class="tech-item" data-anim="scale-in" data-delay="50"><svg viewBox="0 0 24 24" fill="none" stroke="#E44D26" stroke-width="1.5"><path d="M4 3l1.78 17.1L12 22l6.22-1.9L20 3H4z"/><path d="M7 7h10l-.35 4H9.5l.25 3h6.5l-.4 4-3.85 1-3.85-1-.2-2.5"/></svg><span>HTML5</span></div><div class="tech-item" data-anim="scale-in" data-delay="100"><svg viewBox="0 0 24 24" fill="none" stroke="#1572B6" stroke-width="1.5"><path d="M4 3l1.78 17.1L12 22l6.22-1.9L20 3H4z"/><path d="M7.5 7h9l-.25 3H9l.25 3h6.5l-.5 5-3.25 1-3.25-1-.15-2"/></svg><span>CSS3</span></div><div class="tech-item" data-anim="scale-in" data-delay="150"><svg viewBox="0 0 24 24" fill="none" stroke="#F7DF1E" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M16 12c0 2.2-1.3 4-3 4"/></svg><span>JavaScript</span></div><div class="tech-item" data-anim="scale-in" data-delay="200"><svg viewBox="0 0 24 24" fill="none" stroke="#61DAFB" stroke-width="1.5"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg><span>React</span></div><div class="tech-item" data-anim="scale-in" data-delay="250"><svg viewBox="0 0 24 24" fill="none" stroke="#339933" stroke-width="1.5"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/><path d="M12 22V12"/><path d="M22 7L12 12 2 7"/></svg><span>Node.js</span></div><div class="tech-item" data-anim="scale-in" data-delay="300"><svg viewBox="0 0 24 24" fill="none" stroke="#3178C6" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M10 8v8M10 12h4M17 8v8"/></svg><span>TypeScript</span></div><div class="tech-item" data-anim="scale-in" data-delay="350"><svg viewBox="0 0 24 24" fill="none" stroke="#FF6F00" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg><span>Firebase</span></div><div class="tech-item" data-anim="scale-in" data-delay="400"><svg viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="1.5"><path d="M12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.9 1.35C13.35 10.82 14.5 12 17 12c2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.9-1.35C15.65 7.18 14.5 6 12 6zM7 12c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.9 1.35C8.35 16.82 9.5 18 12 18c2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.9-1.35C10.65 13.18 9.5 12 7 12z"/></svg><span>Tailwind</span></div></div></div></section>
+<section class="cta-section" id="contact"><div class="container"><div class="section-tag rv" style="display:block" data-anim="fade-up">Start Today</div><h2 class="rv" data-anim="fade-up" data-delay="100">Ready to Build a <span style="background:linear-gradient(135deg,#3B82F6,#06D6A0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Future-Ready</span> Digital Presence?</h2><p class="rv" data-anim="fade-up" data-delay="200">Let's transform your vision into a powerful digital product. Book a free strategy call — no obligations.</p><a href="javascript:void(0)" onclick="openConsultModal()" class="btn-primary cta-float rv" data-anim="scale-in" data-delay="300">Book Free Consultation →</a><div class="cta-stats rv" data-anim="fade-up" data-delay="400"><div class="cta-stat" data-anim="fade-up" data-delay="400"><div class="cta-stat-num">30 min</div><div class="cta-stat-label">Free Strategy Call</div></div><div class="cta-stat" data-anim="fade-up" data-delay="500"><div class="cta-stat-num">Fast</div><div class="cta-stat-label">Turnaround Time</div></div><div class="cta-stat" data-anim="fade-up" data-delay="600"><div class="cta-stat-num">Zero</div><div class="cta-stat-label">Obligations</div></div></div></div></section>
+</main>
+<footer><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="#" class="logo" style="margin-bottom:4px"><img src="assets/images/logo/leovantage-web-studio-icon.png" alt="Leovantage Web Studio logo"><div class="logo-text">Leovantage <span>Web Studio</span></div></a><p>Smart Digital Solutions Powered by AI. We help businesses build powerful digital experiences.</p><div class="footer-email"><a href="mailto:info@leovantagewebstudio.com">info@leovantagewebstudio.com</a></div><div class="socials"><a href="https://www.facebook.com/share/187xN55nm4/" target="_blank" rel="noopener noreferrer" class="social-icon si-fb" title="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://www.linkedin.com/in/nitin-sinha-5b936a3b4" target="_blank" rel="noopener noreferrer" class="social-icon si-li" title="LinkedIn" style="font-size:12px">in</a><a href="https://www.instagram.com/leovantage.webstudio" target="_blank" rel="noopener noreferrer" class="social-icon si-ig" title="Instagram" style="font-size:11px">IG</a><a href="https://youtube.com/@leovantage.webstudio" target="_blank" rel="noopener noreferrer" class="social-icon si-yt" title="YouTube" style="font-size:11px">YT</a></div></div><div class="footer-col"><h4>Services</h4><ul><li><span class="footer-service-item">AI Website Development</span></li><li><span class="footer-service-item">Web Applications</span></li><li><span class="footer-service-item">Mobile Apps</span></li><li><span class="footer-service-item">UI/UX Design</span></li><li><span class="footer-service-item">SEO Optimization</span></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><span class="footer-company-item footer-about">About Us</span></li><li><span class="footer-company-item footer-portfolio-link" onclick="scrollToPortfolio()">Portfolio</span></li><li><span class="footer-company-item footer-contact-link" onclick="openContactModal()">Contact</span></li></ul></div><div class="footer-col"><h4>Resources</h4><ul><li><a href="leovantage-privacy-policy.html" target="_blank">Privacy Policy</a></li><li><a href="leovantage-terms-and-conditions.html" target="_blank">Terms of Service</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Leovantage Web Studio. All rights reserved.</p><p>Crafted with ✦ AI &amp; Human Creativity</p></div></div></footer>
+<script>function openConsultModal(){document.getElementById('consultModal').classList.add('active');document.body.style.overflow='hidden'}function closeConsultModal(){document.getElementById('consultModal').classList.remove('active');document.body.style.overflow='';setTimeout(()=>{document.getElementById('consultFormSection').style.display='block';document.getElementById('consultSuccess').classList.remove('show');document.getElementById('consultSuccess').style.display='none';['cName','cBusiness','cEmail','cPhone','cService','cBudget','cBrief'].forEach(id=>{const el=document.getElementById(id);if(el)el.value=''})},400)}document.getElementById('consultModal').addEventListener('click',function(e){if(e.target===this)closeConsultModal()});function submitConsultForm(){const n=document.getElementById('cName').value.trim(),e=document.getElementById('cEmail').value.trim(),p=document.getElementById('cPhone').value.trim(),b=document.getElementById('cBudget').value;if(!n||!e||!p){alert('Please fill in your name, email, and phone number.');return}if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){alert('Please enter a valid email address.');return}if(!b){alert('Please select a Budget Range.');document.getElementById('cBudget').focus();return}const btn=document.getElementById('consultSubmitBtn');btn.classList.add('loading');document.getElementById('consultSpinner').style.display='block';const fd={name:n,business:document.getElementById('cBusiness').value.trim()||'Not provided',email:e,phone:p,service:document.getElementById('cService').value||'Not specified',budget:b||'Not specified',brief:document.getElementById('cBrief').value.trim()||'Not provided',date:new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'})};const af={'_subject':'New Client Consultation Request – Leovantage Web Studio','_replyto':e,'_template':'table','_captcha':'false','Full Name':fd.name,'Business Name':fd.business,'Email Address':fd.email,'Phone / WhatsApp':fd.phone,'Service Needed':fd.service,'Budget Range':fd.budget,'Project Details':fd.brief,'Date':fd.date,'_autoresponse':`Hello ${fd.name},\n\nThank you for requesting a free consultation with Leovantage Web Studio.\n\nOur team will contact you within 24 hours.\n\nBest regards,\nLeovantage Web Studio`};fetch('https://formsubmit.co/ajax/leoinfocil.t16032024@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(af)}).then(r=>r.json()).then(()=>showCS()).catch(()=>showCS())}function showCS(){document.getElementById('consultFormSection').style.display='none';const s=document.getElementById('consultSuccess');s.style.display='block';s.classList.add('show');document.getElementById('consultSubmitBtn').classList.remove('loading');document.getElementById('consultSpinner').style.display='none'}window.openConsultModal=openConsultModal;window.closeConsultModal=closeConsultModal;window.submitConsultForm=submitConsultForm;var _ar=0,_pb=null;function openAdvReviewModal(){document.getElementById('advReviewModal').classList.add('active');document.body.style.overflow='hidden'}function closeAdvReviewModal(){document.getElementById('advReviewModal').classList.remove('active');document.body.style.overflow='';setTimeout(()=>{document.getElementById('advReviewForm').style.display='block';document.getElementById('advReviewSuccess').style.display='none';document.getElementById('dupError').style.display='none';_ar=0;_pb=null;document.querySelectorAll('.star-btn').forEach(s=>s.classList.remove('active'));['advName','advEmail','advCompany','advMessage'].forEach(id=>{const el=document.getElementById(id);if(el)el.value=''});document.getElementById('photoPreviewContainer').innerHTML='<div style="font-size:26px;margin-bottom:6px">📷</div><div style="color:rgba(148,163,184,.6);font-size:12px">Click to upload (optional)</div>'},400)}document.getElementById('advReviewModal').addEventListener('click',function(e){if(e.target===this)closeAdvReviewModal()});function setAdvRating(n){_ar=n;document.querySelectorAll('.star-btn').forEach((s,i)=>s.classList.toggle('active',i<n))}function previewPhoto(input){if(input.files&&input.files[0]){const r=new FileReader();r.onload=function(e){_pb=e.target.result;document.getElementById('photoPreviewContainer').innerHTML='<img src="'+e.target.result+'" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin:0 auto;display:block"><div style="color:rgba(148,163,184,.6);font-size:11px;margin-top:6px">Photo selected ✓</div>'};r.readAsDataURL(input.files[0])}}function submitAdvReview(){const n=document.getElementById('advName').value.trim(),e=document.getElementById('advEmail').value.trim(),m=document.getElementById('advMessage').value.trim();if(!n||!e||!m){alert('Please fill in name, email, and review.');return}if(!_ar){alert('Please select a star rating.');return}if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){alert('Please enter a valid email.');return}const se=JSON.parse(localStorage.getItem('lv_reviewed_emails')||'[]');if(se.includes(e.toLowerCase())){document.getElementById('dupError').style.display='block';return}const c=document.getElementById('advCompany').value.trim(),sp=document.getElementById('reviewSpinner'),btn=document.getElementById('advSubmitBtn');btn.querySelector('.btn-text').style.display='none';sp.style.display='block';fetch('https://formsubmit.co/ajax/leoinfocil.t16032024@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({'_subject':'New Client Review – Leovantage Web Studio','_template':'table','_captcha':'false','Rating':'⭐'.repeat(_ar),'Name':n,'Email':e,'Company':c||'N/A','Review':m,'Date':new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'})})}).catch(()=>{});setTimeout(()=>{se.push(e.toLowerCase());localStorage.setItem('lv_reviewed_emails',JSON.stringify(se));const rv=JSON.parse(localStorage.getItem('lv_reviews')||'[]');rv.push({name:n,email:e.toLowerCase(),company:c,message:m,rating:_ar,photo:_pb,date:new Date().toISOString()});localStorage.setItem('lv_reviews',JSON.stringify(rv));renderReviews();document.getElementById('advReviewForm').style.display='none';document.getElementById('advReviewSuccess').style.display='block';btn.querySelector('.btn-text').style.display='';sp.style.display='none'},1200)}function renderReviews(){const g=document.getElementById('user-reviews-grid'),rv=JSON.parse(localStorage.getItem('lv_reviews')||'[]'),oe=JSON.parse(localStorage.getItem('lv_reviewed_emails')||'[]');if(!rv.length){g.innerHTML='';return}g.innerHTML=rv.map((r,i)=>{const io=oe.includes(r.email),ini=r.name.split(' ').map(w=>w[0]).join('').substring(0,2).toUpperCase(),st='★'.repeat(r.rating)+'☆'.repeat(5-r.rating),d=new Date(r.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});return`<div class="published-review ${io?'lv-owner':''}"><button class="pub-del-btn" onclick="confirmDeleteReview(${i})" title="Delete">🗑</button><div class="pub-review-header"><div class="pub-avatar">${r.photo?'<img src="'+r.photo+'" alt="'+r.name+'">':ini}</div><div class="pub-info"><div class="pub-name">${r.name}</div>${r.company?'<div class="pub-company">'+r.company+'</div>':''}</div></div><div class="pub-stars">${st}</div><div class="pub-message">${r.message}</div><div class="pub-date">${d}</div></div>`}).join('')}var _dt=-1;function confirmDeleteReview(i){_dt=i;document.getElementById('lvDelOverlay').classList.add('lv-active')}function cancelDelete(){document.getElementById('lvDelOverlay').classList.remove('lv-active');_dt=-1}function executeDelete(){document.getElementById('lvDelOverlay').classList.remove('lv-active');if(_dt<0)return;const rv=JSON.parse(localStorage.getItem('lv_reviews')||'[]'),rm=rv.splice(_dt,1);localStorage.setItem('lv_reviews',JSON.stringify(rv));if(rm[0]){const em=JSON.parse(localStorage.getItem('lv_reviewed_emails')||'[]'),idx=em.indexOf(rm[0].email);if(idx>-1)em.splice(idx,1);localStorage.setItem('lv_reviewed_emails',JSON.stringify(em))}const cards=document.querySelectorAll('.published-review');if(cards[_dt]){cards[_dt].classList.add('lv-deleting');setTimeout(()=>renderReviews(),450)}else renderReviews();_dt=-1;const t=document.getElementById('lvDelToast');t.classList.add('lv-show');setTimeout(()=>t.classList.remove('lv-show'),2600)}window.openAdvReviewModal=openAdvReviewModal;window.closeAdvReviewModal=closeAdvReviewModal;window.setAdvRating=setAdvRating;window.submitAdvReview=submitAdvReview;window.confirmDeleteReview=confirmDeleteReview;window.cancelDelete=cancelDelete;window.executeDelete=executeDelete;renderReviews();</script>
+<div class="lv-del-overlay" id="lvDelOverlay" onclick="if(event.target===this)cancelDelete()"><div class="lv-del-modal"><div class="lv-del-icon">🗑</div><div class="lv-del-title">Delete Review?</div><div class="lv-del-msg">This action cannot be undone.</div><div class="lv-del-btns"><button class="lv-cancel-btn" onclick="cancelDelete()">Cancel</button><button class="lv-del-confirm-btn" onclick="executeDelete()">Delete</button></div></div></div><div class="lv-del-toast" id="lvDelToast">✓ Review deleted</div>
+<script>const rEls=document.querySelectorAll('.rv,.service-card,.why-card,.founder-card,.tech-item,.process-step');function chk(){rEls.forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight-60)el.classList.add('v')})}chk();window.addEventListener('scroll',chk,{passive:true});if('IntersectionObserver' in window){const obs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v')})},{threshold:.05,rootMargin:'0px 0px 80px 0px'});rEls.forEach(el=>obs.observe(el))}setTimeout(()=>rEls.forEach(el=>el.classList.add('v')),1200);function toggleMobileMenu(){const m=document.getElementById('mobileMenu'),h=document.getElementById('hamburger');if(m.classList.contains('open')){m.classList.remove('open');h.classList.remove('open');document.body.style.overflow=''}else{m.classList.add('open');h.classList.add('open');document.body.style.overflow='hidden'}}function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('open');document.getElementById('hamburger').classList.remove('open');document.body.style.overflow=''}function closeMobileMenuOnBackdrop(e){if(e.target===document.getElementById('mobileMenu'))closeMobileMenu()}document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMobileMenu()});window.toggleMobileMenu=toggleMobileMenu;window.closeMobileMenu=closeMobileMenu;window.closeMobileMenuOnBackdrop=closeMobileMenuOnBackdrop;window.addEventListener('scroll',()=>{const n=document.querySelector('nav');if(window.scrollY>50)n.classList.add('scrolled');else n.classList.remove('scrolled')});function scrollToPortfolio(){const s=document.getElementById('portfolio');if(!s)return;s.scrollIntoView({behavior:'smooth',block:'start'});setTimeout(()=>{s.classList.add('portfolio-highlight-active');s.addEventListener('animationend',function h(){s.classList.remove('portfolio-highlight-active');s.removeEventListener('animationend',h)})},600)}function openContactModal(){const o=document.getElementById('contactModal');if(!o)return;o.classList.add('active');document.body.style.overflow='hidden'}function closeContactModal(){const o=document.getElementById('contactModal');if(!o)return;o.classList.remove('active');document.body.style.overflow=''}function handleContactOverlayClick(e){if(e.target===document.getElementById('contactModal'))closeContactModal()}document.addEventListener('keydown',e=>{if(e.key==='Escape')closeContactModal()});window.scrollToPortfolio=scrollToPortfolio;window.openContactModal=openContactModal;window.closeContactModal=closeContactModal;window.handleContactOverlayClick=handleContactOverlayClick;</script>
+<div class="contact-overlay" id="contactModal" onclick="handleContactOverlayClick(event)"><div class="contact-modal"><button class="contact-close-btn" onclick="closeContactModal()" title="Close">✕</button><div class="contact-modal-head"><div class="contact-modal-icon">📬</div><div><div class="contact-modal-title">Get in Touch</div><div class="contact-modal-sub">We'd love to hear from you</div></div></div><div class="contact-row"><div class="contact-row-icon wa">💬</div><div class="contact-row-text"><div class="contact-row-label">WhatsApp</div><div class="contact-row-value"><a href="https://wa.me/916265946072" target="_blank" rel="noopener noreferrer">+91 6265946072</a></div></div></div><div class="contact-row"><div class="contact-row-icon ml">✉️</div><div class="contact-row-text"><div class="contact-row-label">Email</div><div class="contact-row-value"><a href="mailto:leovantage059@gmail.com">leovantage059@gmail.com</a></div></div></div><div class="contact-row"><div class="contact-row-icon bml">🏢</div><div class="contact-row-text"><div class="contact-row-label">Business Email</div><div class="contact-row-value"><a href="mailto:info@leovantagewebstudio.com">info@leovantagewebstudio.com</a></div></div></div><div class="contact-row"><div class="contact-row-icon ig">📸</div><div class="contact-row-text"><div class="contact-row-label">Instagram</div><div class="contact-row-value"><a href="https://www.instagram.com/leovantage.webstudio" target="_blank" rel="noopener noreferrer">@leovantage.webstudio</a></div></div></div></div></div>
+<script>
+/* ═══════════════════════════════════════════════════════
+   PREMIUM ANIMATION ENGINE — Leovantage Web Studio
+═══════════════════════════════════════════════════════ */
+
+(function(){
+  'use strict';
+
+  /* ── 1. Scroll Progress Bar ── */
+  var bar = document.getElementById('scroll-progress-bar');
+  function updateProgress(){
+    var h = document.documentElement;
+    var pct = (h.scrollTop||document.body.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    if(bar) bar.style.width = Math.min(pct,100) + '%';
+  }
+  window.addEventListener('scroll', updateProgress, {passive:true});
+
+  /* ── 2. Intersection Observer — data-anim elements ── */
+  var animEls = document.querySelectorAll('[data-anim]');
+  if('IntersectionObserver' in window){
+    var animObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var el = e.target;
+          var delay = parseInt(el.getAttribute('data-delay')||'0');
+          setTimeout(function(){ el.classList.add('anim-done'); }, delay);
+          animObs.unobserve(el);
+        }
+      });
+    },{threshold:0.08, rootMargin:'0px 0px -40px 0px'});
+    animEls.forEach(function(el){ animObs.observe(el); });
+  } else {
+    animEls.forEach(function(el){ el.classList.add('anim-done'); });
+  }
+
+  /* ── 3. Hero floating particles ── */
+  var heroBg = document.querySelector('.hero-bg');
+  if(heroBg){
+    var colors = ['rgba(59,130,246,.35)','rgba(139,92,246,.3)','rgba(6,214,160,.25)','rgba(34,211,238,.2)'];
+    for(var p=0;p<12;p++){
+      var pt = document.createElement('div');
+      pt.className = 'particle';
+      var sz = (Math.random()*4+2)+'px';
+      pt.style.cssText = [
+        'width:'+sz,'height:'+sz,
+        'background:'+colors[Math.floor(Math.random()*colors.length)],
+        'left:'+(Math.random()*100)+'%','top:'+(Math.random()*100)+'%',
+        '--dur:'+(Math.random()*6+5)+'s',
+        '--del:'+(-Math.random()*6)+'s',
+        'filter:blur(1px)'
+      ].join(';');
+      heroBg.appendChild(pt);
+    }
+  }
+
+  /* ── 4. Typing effect for hero h1 ── */
+  var h1 = document.querySelector('.hero h1');
+  if(h1){
+    var cursor = document.createElement('span');
+    cursor.className = 'typing-cursor';
+    h1.appendChild(cursor);
+    setTimeout(function(){
+      cursor.style.display='none';
+    }, 4000);
+  }
+
+  /* ── 5. Mouse-parallax on hero visual ── */
+  var heroVisual = document.querySelector('.hero-visual');
+  var heroSection = document.querySelector('.hero');
+  if(heroVisual && heroSection){
+    heroSection.addEventListener('mousemove', function(e){
+      var rect = heroSection.getBoundingClientRect();
+      var cx = (e.clientX - rect.left) / rect.width - 0.5;
+      var cy = (e.clientY - rect.top) / rect.height - 0.5;
+      heroVisual.style.transform = 'perspective(1200px) rotateY('+(cx*6)+'deg) rotateX('+(-cy*4)+'deg)';
+    },{passive:true});
+    heroSection.addEventListener('mouseleave', function(){
+      heroVisual.style.transform = '';
+    });
+  }
+
+  /* ── 6. Card 3D tilt on mouse move ── */
+  document.querySelectorAll('.service-card,.why-card,.founder-card').forEach(function(card){
+    card.addEventListener('mousemove', function(e){
+      var r = card.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = 'translateY(-8px) perspective(600px) rotateX('+(-y*6)+'deg) rotateY('+(x*6)+'deg)';
+    },{passive:true});
+    card.addEventListener('mouseleave', function(){
+      card.style.transform = '';
+      card.style.transition = 'transform .5s cubic-bezier(.16,1,.3,1)';
+    });
+  });
+
+  /* ── 7. Smooth stagger on scroll for grid children ── */
+  var staggerObs;
+  if('IntersectionObserver' in window){
+    staggerObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var children = e.target.querySelectorAll('[data-anim]');
+          children.forEach(function(child, idx){
+            setTimeout(function(){
+              child.classList.add('anim-done');
+            }, idx * 90);
+          });
+          staggerObs.unobserve(e.target);
+        }
+      });
+    },{threshold:0.05});
+    document.querySelectorAll('.stagger-children').forEach(function(el){
+      staggerObs.observe(el);
+    });
+  }
+
+  /* ── 8. Section background spotlight follows mouse ── */
+  var sections = document.querySelectorAll('section');
+  sections.forEach(function(sec){
+    if(getComputedStyle(sec).position === 'static'){
+      sec.style.position = 'relative';
+    }
+    var spot = document.createElement('div');
+    spot.className = 'section-spotlight';
+    sec.appendChild(spot);
+    sec.addEventListener('mousemove', function(e){
+      var r = sec.getBoundingClientRect();
+      spot.style.left = (e.clientX - r.left) + 'px';
+      spot.style.top = (e.clientY - r.top) + 'px';
+      spot.style.opacity = '1';
+    },{passive:true});
+    sec.addEventListener('mouseleave', function(){
+      spot.style.opacity = '0';
+    });
+  });
+
+  /* ── 9. Number counter animation for stat elements ── */
+  function animateCounter(el, target, duration){
+    if(isNaN(target)) return;
+    var start = 0, startTime = null;
+    function step(ts){
+      if(!startTime) startTime = ts;
+      var progress = Math.min((ts - startTime) / duration, 1);
+      var ease = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(ease * target);
+      if(progress < 1) requestAnimationFrame(step);
+      else el.textContent = target;
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* ── 10. Process step line draw animation ── */
+  var timeline = document.querySelector('.process-timeline::before');
+  var processObs;
+  if('IntersectionObserver' in window && document.querySelector('.process-timeline')){
+    processObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var style = document.createElement('style');
+          style.textContent = '.process-timeline::before{animation:lineGrow 1.2s cubic-bezier(.16,1,.3,1) forwards}@keyframes lineGrow{from{transform:scaleX(0);transform-origin:left}to{transform:scaleX(1);transform-origin:left}}';
+          document.head.appendChild(style);
+          processObs.unobserve(e.target);
+        }
+      });
+    },{threshold:0.3});
+    processObs.observe(document.querySelector('.process-timeline'));
+  }
+
+  /* ── 11. Nav active link highlight on scroll ── */
+  var navLinks = document.querySelectorAll('.nav-links a');
+  var sectionsForNav = [];
+  navLinks.forEach(function(a){
+    var id = a.getAttribute('href').replace('#','');
+    var sec = document.getElementById(id);
+    if(sec) sectionsForNav.push({el:sec, link:a});
+  });
+  function updateActiveNav(){
+    var scrollY = window.scrollY + 120;
+    sectionsForNav.forEach(function(item){
+      var top = item.el.offsetTop;
+      var bot = top + item.el.offsetHeight;
+      if(scrollY >= top && scrollY < bot){
+        navLinks.forEach(function(a){ a.style.color = ''; });
+        item.link.style.color = '#fff';
+      }
+    });
+  }
+  window.addEventListener('scroll', updateActiveNav, {passive:true});
+
+  /* ── 12. Hero stats counter ── */
+  var heroStats = document.querySelectorAll('.stat-num');
+  var heroStatsObserver;
+  if('IntersectionObserver' in window){
+    heroStatsObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          heroStatsObserver.unobserve(e.target);
+        }
+      });
+    },{threshold:0.5});
+    heroStats.forEach(function(s){ heroStatsObserver.observe(s); });
+  }
+
+  /* ── 13. Trust stat bars animation ── */
+  var trustBars = document.querySelectorAll('.trust-stat-bar');
+  if('IntersectionObserver' in window){
+    var barObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.style.cssText += 'transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.16,1,.3,1);animation:barGrow .8s cubic-bezier(.16,1,.3,1) forwards';
+          barObs.unobserve(e.target);
+        }
+      });
+    },{threshold:0.5});
+    trustBars.forEach(function(b){
+      var s = document.createElement('style');
+      s.textContent = '@keyframes barGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}';
+      if(!document.querySelector('style[data-bargrow]')){
+        s.setAttribute('data-bargrow','1');
+        document.head.appendChild(s);
+      }
+      barObs.observe(b);
+    });
+  }
+
+  /* ── 14. Smooth section entry glow ── */
+  if('IntersectionObserver' in window){
+    var glowObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.style.animation = 'sectionGlowIn 1.2s ease forwards';
+          glowObs.unobserve(e.target);
+        }
+      });
+    },{threshold:0.1});
+    document.querySelectorAll('section').forEach(function(s){ glowObs.observe(s); });
+  }
+
+  /* ── 15. Footer links stagger ── */
+  var footerLinks = document.querySelectorAll('.footer-col ul li');
+  if('IntersectionObserver' in window){
+    var footObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          footerLinks.forEach(function(li,i){
+            li.style.opacity = '0';
+            li.style.transform = 'translateX(-16px)';
+            setTimeout(function(){
+              li.style.transition = 'opacity .5s ease, transform .5s cubic-bezier(.16,1,.3,1)';
+              li.style.opacity = '1';
+              li.style.transform = 'translateX(0)';
+            }, i * 60);
+          });
+          footObs.unobserve(e.target);
+        }
+      });
+    },{threshold:0.2});
+    var footer = document.querySelector('footer');
+    if(footer) footObs.observe(footer);
+  }
+
+  /* ── 16. Btn ripple click effect ── */
+  document.querySelectorAll('.btn-primary,.btn-secondary,.nav-cta').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      var ripple = document.createElement('span');
+      var rect = btn.getBoundingClientRect();
+      var size = Math.max(rect.width, rect.height);
+      ripple.style.cssText = [
+        'position:absolute','width:'+size+'px','height:'+size+'px',
+        'left:'+(e.clientX - rect.left - size/2)+'px',
+        'top:'+(e.clientY - rect.top - size/2)+'px',
+        'background:rgba(255,255,255,.2)','border-radius:50%',
+        'transform:scale(0)','pointer-events:none',
+        'animation:rippleAnim .6s ease forwards'
+      ].join(';');
+      if(!document.querySelector('[data-ripplestyle]')){
+        var rs = document.createElement('style');
+        rs.setAttribute('data-ripplestyle','');
+        rs.textContent = '@keyframes rippleAnim{to{transform:scale(2.5);opacity:0}}';
+        document.head.appendChild(rs);
+      }
+      btn.style.overflow = 'hidden';
+      btn.appendChild(ripple);
+      setTimeout(function(){ ripple.remove(); }, 700);
+    });
+  });
+
+})();
+</script>
+</body>
