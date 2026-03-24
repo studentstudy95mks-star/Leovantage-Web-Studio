@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions — Leovantage Web Studio</title>
+  <meta name="description" content="Terms and Conditions for Leovantage Web Studio services. Review our policies on service agreements, payments, and usage terms.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="assets/images/logo/leovantage-web-studio-icon.png">
+  <link rel="canonical" href="https://leovantagewebstudio.com/leovantage-terms-and-conditions.html">
+  <meta property="og:title" content="Terms &amp; Conditions — Leovantage Web Studio">
+  <meta property="og:description" content="Terms and Conditions for Leovantage Web Studio services.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & tokens ─────────────────────────────────── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg:          #060E1A;
+      --bg2:         #0A1628;
+      --bg3:         #0C2035;
+      --surface:     rgba(12,32,53,0.7);
+      --border:      rgba(255,255,255,0.07);
+      --border-hi:   rgba(37,99,235,0.35);
+      --primary:     #3B82F6;
+      --accent:      #22D3EE;
+      --purple:      #7C3AED;
+      --text:        #CBD5E1;
+      --text-hi:     #F1F5F9;
+      --muted:       rgba(148,163,184,0.55);
+      --heading:     #FFFFFF;
+      --grad:        linear-gradient(135deg,#2563EB,#7C3AED);
+      --grad-text:   linear-gradient(135deg,#60A5FA,#22D3EE);
+      --radius:      16px;
+      --radius-sm:   10px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Subtle background grid ─────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(37,99,235,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Glow orbs ──────────────────────────────────────── */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.18;
+    }
+    .orb-1 { width: 500px; height: 500px; background: #2563EB; top: -150px; right: -100px; }
+    .orb-2 { width: 400px; height: 400px; background: #7C3AED; bottom: 100px; left: -120px; }
+
+    /* ── Typography ─────────────────────────────────────── */
+    h1, h2, h3, h4 {
+      font-family: 'Sora', sans-serif;
+      color: var(--heading);
+      line-height: 1.2;
+    }
+    a { color: var(--accent); text-decoration: none; transition: opacity .2s; }
+    a:hover { opacity: .75; }
+
+    /* ── Layout ─────────────────────────────────────────── */
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      width: 100%;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       HEADER
+    ══════════════════════════════════════════════════════ */
+    header {
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(20px);
+      background: rgba(5,17,31,0.85);
+      padding: 20px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .logo-mark {
+      width: 36px; height: 36px;
+      border-radius: 9px;
+      background: var(--grad);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Sora', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      color: #fff;
+      box-shadow: 0 0 18px rgba(37,99,235,0.5);
+      flex-shrink: 0;
+    }
+    .logo-text {
+      font-family: 'Sora', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      color: var(--heading);
+      letter-spacing: -0.3px;
+    }
+    .logo-text span { color: var(--accent); }
+    .header-badge {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.5px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       HERO BANNER
+    ══════════════════════════════════════════════════════ */
+    .hero {
+      padding: 72px 24px 56px;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-hi), transparent);
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(34,211,238,0.08);
+      border: 1px solid rgba(34,211,238,0.2);
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+    }
+    .hero-tag::before { content: '⚡'; font-size: 11px; }
+    .hero h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: 0px;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+    .hero-meta-item .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      display: inline-block;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       TABLE OF CONTENTS
+    ══════════════════════════════════════════════════════ */
+    .toc-section {
+      padding: 48px 0 0;
+    }
+    .toc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      backdrop-filter: blur(12px);
+    }
+    .toc-card h3 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+    }
+    .toc-list li a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 400;
+      transition: color .2s;
+    }
+    .toc-list li a:hover { color: var(--accent); opacity: 1; }
+    .toc-list li a .toc-num {
+      font-family: 'Sora', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--primary);
+      background: rgba(37,99,235,0.12);
+      width: 22px; height: 22px;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       TERMS CONTENT
+    ══════════════════════════════════════════════════════ */
+    .terms-body {
+      padding: 56px 0 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .terms-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      backdrop-filter: blur(12px);
+      transition: border-color .3s, box-shadow .3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .terms-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--grad);
+      opacity: 0;
+      transition: opacity .3s;
+    }
+    .terms-section:hover {
+      border-color: var(--border-hi);
+      box-shadow: 0 8px 40px rgba(37,99,235,0.1);
+    }
+    .terms-section:hover::before { opacity: 1; }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .section-num {
+      font-family: 'Sora', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--primary);
+      background: rgba(37,99,235,0.12);
+      border: 1px solid rgba(37,99,235,0.2);
+      padding: 4px 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+      margin-top: 3px;
+    }
+    .terms-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--heading);
+    }
+    .terms-section p {
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .terms-section p + p { margin-top: 12px; }
+
+    /* Highlight note */
+    .note-box {
+      margin-top: 14px;
+      background: rgba(37,99,235,0.07);
+      border: 1px solid rgba(37,99,235,0.18);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      font-size: 14px;
+      color: rgba(148,163,184,0.9);
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .note-box::before { content: '💡'; flex-shrink: 0; }
+
+    /* ── Contact section ────────────────────────────────── */
+    .contact-section {
+      background: linear-gradient(135deg, rgba(37,99,235,0.12) 0%, rgba(124,58,237,0.08) 100%);
+      border: 1px solid var(--border-hi);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+    }
+    .contact-section h2 {
+      font-size: 1.15rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-section h2::before { content: '📬'; font-size: 1rem; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .contact-item {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+    }
+    .contact-item label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .contact-item a, .contact-item span {
+      font-size: 14.5px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .contact-item span { color: var(--text-hi); }
+
+    /* ── Signature section ──────────────────────────────── */
+    .signature-section {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      background: var(--surface);
+    }
+    .signature-section h2 {
+      font-size: 1.1rem;
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .sig-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    .sig-block { display: flex; flex-direction: column; gap: 12px; }
+    .sig-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+    .sig-line {
+      height: 1px;
+      background: linear-gradient(90deg, var(--border-hi), transparent);
+      margin-top: 48px;
+    }
+    .sig-name {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .sig-meta {
+      font-size: 12px;
+      color: rgba(148,163,184,0.4);
+    }
+    .sig-date-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .sig-date-line span {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .sig-date-box {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ══════════════════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════════════════ */
+    footer {
+      border-top: 1px solid var(--border);
+      background: rgba(5,14,28,0.98);
+      padding: 32px 24px;
+      margin-top: auto;
+      position: relative;
+      z-index: 1;
+    }
+    .footer-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-copy {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .footer-copy strong { color: var(--text); font-weight: 500; }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: var(--muted);
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--text-hi); opacity: 1; }
+
+    /* ══════════════════════════════════════════════════════
+       SCROLL PROGRESS
+    ══════════════════════════════════════════════════════ */
+    #progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      z-index: 9999;
+      width: 0%;
+      transition: width .1s linear;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════════════════════ */
+    @media (max-width: 640px) {
+      .header-badge { display: none; }
+      .hero { padding: 52px 16px 40px; }
+      .toc-card { padding: 22px 20px; }
+      .toc-list { grid-template-columns: 1fr; }
+      .terms-section { padding: 24px 22px; }
+      .contact-section { padding: 24px 22px; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .sig-grid { grid-template-columns: 1fr; }
+      .signature-section { padding: 24px 22px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+  
+    /* Match main site */
+    @keyframes pageIn{from{opacity:0}to{opacity:1}}
+    body{animation:pageIn .5s ease}
+    h1,h2,h3,h4,h5,h6{font-family:'Sora',sans-serif}
+  </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P83WEV31DD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P83WEV31DD');
+</script>
+
+</head>
+<body>
+
+<!-- Scroll progress bar -->
+<div id="progress-bar"></div>
+
+<!-- Background orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<div class="wrapper">
+
+  <!-- ══ HEADER ══════════════════════════════════════════ -->
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <div class="logo-text">LeoVantage <span>Web Studio</span></div>
+      </a>
+      <span class="header-badge">Legal Document</span>
+    </div>
+  </header>
+
+  <!-- ══ MAIN ════════════════════════════════════════════ -->
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-tag">Legal</div>
+        <h1>Terms &amp; Conditions</h1>
+        <div class="hero-meta">
+          <span class="hero-meta-item"><span class="dot"></span> LeoVantage Web Studio</span>
+          <span class="hero-meta-item"><span class="dot"></span> Last Updated: 5 March 2026</span>
+          <span class="hero-meta-item"><span class="dot"></span> 7 Sections</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- Intro note -->
+      <div class="note-box" style="margin-top:40px;">
+        Welcome to LeoVantage Web Studio. By using our services, you agree to the following terms and conditions. Please read them carefully before proceeding.
+      </div>
+
+      <!-- Table of Contents -->
+      <section class="toc-section" aria-label="Table of Contents">
+        <div class="toc-card">
+          <h3>Table of Contents</h3>
+          <ul class="toc-list">
+            <li><a href="#services"><span class="toc-num">1</span> Services</a></li>
+            <li><a href="#payment"><span class="toc-num">2</span> Payment Terms</a></li>
+            <li><a href="#refund"><span class="toc-num">3</span> Refund Policy</a></li>
+            <li><a href="#client"><span class="toc-num">4</span> Client Responsibilities</a></li>
+            <li><a href="#revisions"><span class="toc-num">5</span> Revisions</a></li>
+            <li><a href="#ownership"><span class="toc-num">6</span> Ownership</a></li>
+            <li><a href="#liability"><span class="toc-num">7</span> Liability</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Terms Sections -->
+      <div class="terms-body">
+
+        <!-- 1. Services -->
+        <section id="services" class="terms-section">
+          <div class="section-header">
+            <span class="section-num">01</span>
+            <h2>Services</h2>
+          </div>
+          <p>LeoVantage Web Studio provides a comprehensive range of digital services, including Website Development, Mobile App Development, UI/UX Design, and other digital solutions, all designed to help businesses grow and strengthen their presence online.</p>
+        </section>
+
+        <!-- 2. Payment Terms -->
+        <section id="payment" class="terms-section">
+          <div class="section-header">
+            <span class="section-num">02</span>
+            <h2>Payment Terms</h2>
+          </div>
+          <p>All projects require an advance payment of <strong style="color:var(--text-hi);">50%</strong> of the total project cost before work begins. The remaining balance must be paid in full prior to the final delivery of the project.</p>
+          <div class="note-box">No work will commence until the initial advance payment has been received and confirmed.</div>
+        </section>
+
+        <!-- 3. Refund Policy -->
+        <section id="refund" class="terms-section">
+          <div class="section-header">
+            <span class="section-num">03</span>
+            <h2>Refund Policy</h2>
+          </div>
+          <p>Refund requests are only eligible within the first <strong style="color:var(--text-hi);">6 months</strong> from the project start date. After this period has elapsed, all payments made are considered non-refundable.</p>
+        </section>
+
+        <!-- 4. Client Responsibilities -->
+        <section id="client" class="terms-section">
+          <div class="section-header">
+            <span class="section-num">04</span>
+            <h2>Client Responsibilities</h2>
+          </div>
+          <p>Clients are required to provide all necessary materials in a timely manner, including content, images, login credentials, and any other project-related information. Failure to supply the required information on time may result in delays to the project timeline, for which LeoVantage Web Studio will not be held responsible.</p>
+        </section>
+
+        <!-- 5. Revisions -->
+        <section id="revisions" class="terms-section">
+          <div class="section-header">
+            <span class="section-num">05</span>
+            <h2>Revisions</h2>
+          </div>
+          <p>Each project includes a defined number of revisions as specified in the project agreement. Requests for major changes or revisions that exceed the agreed limit may be subject to additional charges, which will be communicated to the client in advance.</p>
+        </section>
+
+        <!-- 6. Ownership -->
+        <section id="ownership" class="terms-section">
+          <div class="section-header">
+            <span class="section-num">06</span>
+            <h2>Ownership</h2>
+          </div>
+          <p>Upon receipt of full and final payment, complete ownership of the delivered website or application will be transferred to the client. LeoVantage Web Studio reserves the right to feature completed projects in its portfolio and marketing materials unless the client explicitly requests otherwise in writing.</p>
+        </section>
+
+        <!-- 7. Liability -->
+        <section id="liability" class="terms-section">
+          <div class="section-header">
+            <span class="section-num">07</span>
+            <h2>Liability</h2>
+          </div>
+          <p>LeoVantage Web Studio shall not be held liable for any issues, damages, or losses arising from third-party services, hosting providers, domain registrars, or the misuse of any delivered product by the client or any associated parties.</p>
+        </section>
+
+        <!-- Contact Information -->
+        <section id="contact" class="contact-section">
+          <h2>Contact Information</h2>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <label>Email</label>
+              <a href="mailto:leovantage059@gmail.com">leovantage059@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <label>Website</label>
+              <a href="https://leovantagewebstudio.com" target="_blank" rel="noopener">leovantagewebstudio.com</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Signatures -->
+        <section id="signatures" class="signature-section">
+          <h2>Acknowledgement &amp; Signatures</h2>
+          <div class="sig-grid">
+
+            <!-- Founders -->
+            <div class="sig-block">
+              <span class="sig-label">Authorised by — Founders</span>
+              <div class="sig-line"></div>
+              <p class="sig-name">LeoVantage Web Studio</p>
+              <p class="sig-meta">Gulesh Patel &amp; Nitin Sinha · Co-Founders</p>
+              <div class="sig-date-line">
+                <span>Date:</span>
+                <div class="sig-date-box"></div>
+              </div>
+            </div>
+
+            <!-- Client -->
+            <div class="sig-block">
+              <span class="sig-label">Accepted by — Client</span>
+              <div class="sig-line"></div>
+              <p class="sig-name">Client Full Name</p>
+              <p class="sig-meta">Company / Business Name (if applicable)</p>
+              <div class="sig-date-line">
+                <span>Date:</span>
+                <div class="sig-date-box"></div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div><!-- /.terms-body -->
+    </div><!-- /.container -->
+  </main>
+
+  <!-- ══ FOOTER ══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 <strong>LeoVantage Web Studio</strong>. All rights reserved.</p>
+      <nav class="footer-links">
+        <a href="/">Home</a>
+        <a href="mailto:leovantage059@gmail.com">Contact</a>
+        <a href="https://leovantagewebstudio.com" target="_blank" rel="noopener">Website</a>
+      </nav>
+    </div>
+  </footer>
+
+</div><!-- /.wrapper -->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Scroll progr
